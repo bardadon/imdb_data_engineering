@@ -19,3 +19,10 @@
 [2023-06-03T08:34:52.204+0000] {logging_mixin.py:137} INFO - [2023-06-03T08:34:52.204+0000] {dag.py:2676} INFO - Sync 1 DAGs
 [2023-06-03T08:34:52.223+0000] {logging_mixin.py:137} INFO - [2023-06-03T08:34:52.223+0000] {dag.py:3427} INFO - Setting next_dagrun for example_task_group to 2023-06-02T08:34:52.223645+00:00, run_after=2023-06-03T08:34:52.223645+00:00
 [2023-06-03T08:34:52.238+0000] {processor.py:175} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_task_group.py took 0.079 seconds
+[2023-06-03T08:35:22.499+0000] {processor.py:153} INFO - Started process (PID=326) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_task_group.py
+[2023-06-03T08:35:22.500+0000] {processor.py:743} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-06-03T08:35:22.501+0000] {logging_mixin.py:137} INFO - [2023-06-03T08:35:22.501+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_task_group.py
+[2023-06-03T08:35:22.513+0000] {processor.py:753} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_task_group.py
+[2023-06-03T08:35:22.541+0000] {logging_mixin.py:137} INFO - [2023-06-03T08:35:22.541+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-06-03T08:35:22.560+0000] {logging_mixin.py:137} INFO - [2023-06-03T08:35:22.560+0000] {dag.py:3427} INFO - Setting next_dagrun for example_task_group to 2023-06-02T08:35:22.559976+00:00, run_after=2023-06-03T08:35:22.559976+00:00
+[2023-06-03T08:35:22.574+0000] {processor.py:175} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_task_group.py took 0.077 seconds
