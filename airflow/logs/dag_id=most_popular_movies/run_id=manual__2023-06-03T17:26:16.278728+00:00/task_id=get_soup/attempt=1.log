@@ -1,0 +1,13 @@
+[2023-06-03T17:26:17.749+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: most_popular_movies.get_soup manual__2023-06-03T17:26:16.278728+00:00 [queued]>
+[2023-06-03T17:26:17.755+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: most_popular_movies.get_soup manual__2023-06-03T17:26:16.278728+00:00 [queued]>
+[2023-06-03T17:26:17.755+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-03T17:26:17.766+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): get_soup> on 2023-06-03 17:26:16.278728+00:00
+[2023-06-03T17:26:17.771+0000] {standard_task_runner.py:57} INFO - Started process 1635 to run task
+[2023-06-03T17:26:17.774+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'most_popular_movies', 'get_soup', 'manual__2023-06-03T17:26:16.278728+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/most_popular_movies.py', '--cfg-path', '/tmp/tmpk2yipjye']
+[2023-06-03T17:26:17.774+0000] {standard_task_runner.py:85} INFO - Job 30: Subtask get_soup
+[2023-06-03T17:26:17.805+0000] {task_command.py:410} INFO - Running <TaskInstance: most_popular_movies.get_soup manual__2023-06-03T17:26:16.278728+00:00 [running]> on host 8406b7b18d2b
+[2023-06-03T17:26:17.859+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='most_popular_movies' AIRFLOW_CTX_TASK_ID='get_soup' AIRFLOW_CTX_EXECUTION_DATE='2023-06-03T17:26:16.278728+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-03T17:26:16.278728+00:00'
+[2023-06-03T17:26:19.261+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-03T17:26:19.268+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=most_popular_movies, task_id=get_soup, execution_date=20230603T172616, start_date=20230603T172617, end_date=20230603T172619
+[2023-06-03T17:26:19.311+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-03T17:26:19.329+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,23 @@
+[2023-06-03T17:32:20.549+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: most_popular_movies.load_movies manual__2023-06-03T17:32:14.822680+00:00 [queued]>
+[2023-06-03T17:32:20.555+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: most_popular_movies.load_movies manual__2023-06-03T17:32:14.822680+00:00 [queued]>
+[2023-06-03T17:32:20.555+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-03T17:32:20.565+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): load_movies> on 2023-06-03 17:32:14.822680+00:00
+[2023-06-03T17:32:20.570+0000] {standard_task_runner.py:57} INFO - Started process 1788 to run task
+[2023-06-03T17:32:20.574+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'most_popular_movies', 'load_movies', 'manual__2023-06-03T17:32:14.822680+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/most_popular_movies.py', '--cfg-path', '/tmp/tmpvi2k5eq_']
+[2023-06-03T17:32:20.574+0000] {standard_task_runner.py:85} INFO - Job 42: Subtask load_movies
+[2023-06-03T17:32:20.607+0000] {task_command.py:410} INFO - Running <TaskInstance: most_popular_movies.load_movies manual__2023-06-03T17:32:14.822680+00:00 [running]> on host 8406b7b18d2b
+[2023-06-03T17:32:20.750+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='most_popular_movies' AIRFLOW_CTX_TASK_ID='load_movies' AIRFLOW_CTX_EXECUTION_DATE='2023-06-03T17:32:14.822680+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-03T17:32:14.822680+00:00'
+[2023-06-03T17:32:20.756+0000] {logging_mixin.py:149} INFO - Fetching Dataset...
+[2023-06-03T17:32:21.349+0000] {logging_mixin.py:149} INFO - Done
+[2023-06-03T17:32:21.349+0000] {logging_mixin.py:149} INFO - https://bigquery.googleapis.com/bigquery/v2/projects/imdb-388708/datasets/imdb
+[2023-06-03T17:32:21.349+0000] {logging_mixin.py:149} INFO - 
+Fetching Table...
+[2023-06-03T17:32:21.646+0000] {logging_mixin.py:149} INFO - Done
+[2023-06-03T17:32:21.646+0000] {logging_mixin.py:149} INFO - https://bigquery.googleapis.com/bigquery/v2/projects/imdb-388708/datasets/imdb/tables/most_popular_movies
+[2023-06-03T17:32:21.646+0000] {logging_mixin.py:149} INFO - 
+Loading data into BigQuery...
+[2023-06-03T17:32:25.843+0000] {logging_mixin.py:149} INFO - Done. Loaded 250 rows.
+[2023-06-03T17:32:25.843+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-03T17:32:25.851+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=most_popular_movies, task_id=load_movies, execution_date=20230603T173214, start_date=20230603T173220, end_date=20230603T173225
+[2023-06-03T17:32:25.870+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-03T17:32:25.883+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

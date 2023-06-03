@@ -1,0 +1,26 @@
+[2023-06-03T16:51:52.034+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: most_popular_movies.scrape_most_popular_titles manual__2023-06-03T16:41:44.964241+00:00 [queued]>
+[2023-06-03T16:51:52.040+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: most_popular_movies.scrape_most_popular_titles manual__2023-06-03T16:41:44.964241+00:00 [queued]>
+[2023-06-03T16:51:52.040+0000] {taskinstance.py:1308} INFO - Starting attempt 4 of 4
+[2023-06-03T16:51:52.049+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): scrape_most_popular_titles> on 2023-06-03 16:41:44.964241+00:00
+[2023-06-03T16:51:52.054+0000] {standard_task_runner.py:57} INFO - Started process 950 to run task
+[2023-06-03T16:51:52.056+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'most_popular_movies', 'scrape_most_popular_titles', 'manual__2023-06-03T16:41:44.964241+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/most_popular_movies.py', '--cfg-path', '/tmp/tmplrnva4id']
+[2023-06-03T16:51:52.057+0000] {standard_task_runner.py:85} INFO - Job 11: Subtask scrape_most_popular_titles
+[2023-06-03T16:51:52.086+0000] {task_command.py:410} INFO - Running <TaskInstance: most_popular_movies.scrape_most_popular_titles manual__2023-06-03T16:41:44.964241+00:00 [running]> on host 8406b7b18d2b
+[2023-06-03T16:51:52.140+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='most_popular_movies' AIRFLOW_CTX_TASK_ID='scrape_most_popular_titles' AIRFLOW_CTX_EXECUTION_DATE='2023-06-03T16:41:44.964241+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-03T16:41:44.964241+00:00'
+[2023-06-03T16:51:52.142+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/most_popular_movies.py", line 28, in scrape_most_popular_titles
+    _scrape_most_popular_titles(soup)
+  File "/opt/airflow/dags/helper/web_scrape.py", line 45, in _scrape_most_popular_titles
+    titlesRefs = soup.find_all('td', {'class':'titleColumn'})
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[2023-06-03T16:51:52.148+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=most_popular_movies, task_id=scrape_most_popular_titles, execution_date=20230603T164144, start_date=20230603T165152, end_date=20230603T165152
+[2023-06-03T16:51:52.155+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 11 for task scrape_most_popular_titles ('NoneType' object has no attribute 'find_all'; 950)
+[2023-06-03T16:51:52.188+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-03T16:51:52.200+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

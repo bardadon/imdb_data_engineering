@@ -1,0 +1,34 @@
+[2023-06-03T17:29:48.450+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: most_popular_movies.process_movies manual__2023-06-03T17:29:43.696874+00:00 [queued]>
+[2023-06-03T17:29:48.458+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: most_popular_movies.process_movies manual__2023-06-03T17:29:43.696874+00:00 [queued]>
+[2023-06-03T17:29:48.458+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-03T17:29:48.468+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): process_movies> on 2023-06-03 17:29:43.696874+00:00
+[2023-06-03T17:29:48.473+0000] {standard_task_runner.py:57} INFO - Started process 1723 to run task
+[2023-06-03T17:29:48.476+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'most_popular_movies', 'process_movies', 'manual__2023-06-03T17:29:43.696874+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/most_popular_movies.py', '--cfg-path', '/tmp/tmpj6o_8r8i']
+[2023-06-03T17:29:48.476+0000] {standard_task_runner.py:85} INFO - Job 37: Subtask process_movies
+[2023-06-03T17:29:48.510+0000] {task_command.py:410} INFO - Running <TaskInstance: most_popular_movies.process_movies manual__2023-06-03T17:29:43.696874+00:00 [running]> on host 8406b7b18d2b
+[2023-06-03T17:29:48.581+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='most_popular_movies' AIRFLOW_CTX_TASK_ID='process_movies' AIRFLOW_CTX_EXECUTION_DATE='2023-06-03T17:29:43.696874+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-03T17:29:43.696874+00:00'
+[2023-06-03T17:29:48.590+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/most_popular_movies.py", line 30, in process_movies
+    movies_df = _process_movies(movie_names)
+  File "/opt/airflow/dags/helper/web_scrape.py", line 76, in _process_movies
+    movies_df.to_csv('airflow/dags/data/most_popular_movies.csv', sep=',', index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/dags/data/most_popular_movies.csv'
+[2023-06-03T17:29:48.598+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=most_popular_movies, task_id=process_movies, execution_date=20230603T172943, start_date=20230603T172948, end_date=20230603T172948
+[2023-06-03T17:29:48.607+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 37 for task process_movies ([Errno 2] No such file or directory: 'airflow/dags/data/most_popular_movies.csv'; 1723)
+[2023-06-03T17:29:48.647+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-03T17:29:48.663+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

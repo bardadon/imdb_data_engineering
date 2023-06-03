@@ -37,10 +37,10 @@ pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}
 # Move to airflow folder
 cd airflow
 
-# fetch the file docker-compose.yaml
-curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.5.0/docker-compose.yaml'
+# fetch the file docker-compose.yaml 
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.6.1/docker-compose.yaml'
 
-curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.5.0/airflow.sh'
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.6.1/airflow.sh'
 chmod +x airflow.sh
 
 # Create an empty .env file

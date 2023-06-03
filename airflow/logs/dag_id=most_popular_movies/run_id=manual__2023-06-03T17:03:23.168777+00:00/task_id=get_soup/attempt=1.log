@@ -1,0 +1,64 @@
+[2023-06-03T17:03:26.413+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: most_popular_movies.get_soup manual__2023-06-03T17:03:23.168777+00:00 [queued]>
+[2023-06-03T17:03:26.419+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: most_popular_movies.get_soup manual__2023-06-03T17:03:23.168777+00:00 [queued]>
+[2023-06-03T17:03:26.420+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-03T17:03:26.430+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): get_soup> on 2023-06-03 17:03:23.168777+00:00
+[2023-06-03T17:03:26.435+0000] {standard_task_runner.py:57} INFO - Started process 1183 to run task
+[2023-06-03T17:03:26.438+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'most_popular_movies', 'get_soup', 'manual__2023-06-03T17:03:23.168777+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/most_popular_movies.py', '--cfg-path', '/tmp/tmp36z5y5nz']
+[2023-06-03T17:03:26.439+0000] {standard_task_runner.py:85} INFO - Job 17: Subtask get_soup
+[2023-06-03T17:03:26.469+0000] {task_command.py:410} INFO - Running <TaskInstance: most_popular_movies.get_soup manual__2023-06-03T17:03:23.168777+00:00 [running]> on host 8406b7b18d2b
+[2023-06-03T17:03:26.529+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='most_popular_movies' AIRFLOW_CTX_TASK_ID='get_soup' AIRFLOW_CTX_EXECUTION_DATE='2023-06-03T17:03:23.168777+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-03T17:03:23.168777+00:00'
+[2023-06-03T17:03:26.563+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.564+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-06-03T17:03:26.580+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/element.py", line 1603, in __call__
+    return self.find_all(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/element.py", line 2031, in find_all
+    _stacklevel=_stacklevel+1, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/element.py", line 806, in _find_all
+    strainer = SoupStrainer(name, attrs, string, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/element.py", line 2190, in __init__
+    normalized_attrs[key] = self._normalize_search_value(value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/element.py", line 2201, in _normalize_search_value
+    if (isinstance(value, str) or isinstance(value, Callable) or hasattr(value, 'match')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/context.py", line 126, in __getattr__
+    self.var = Connection.get_connection_from_secrets(key)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 434, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `match` isn't defined
+[2023-06-03T17:03:26.582+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=most_popular_movies, task_id=get_soup, execution_date=20230603T170323, start_date=20230603T170326, end_date=20230603T170326
+[2023-06-03T17:03:26.591+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 17 for task get_soup (The conn_id `match` isn't defined; 1183)
+[2023-06-03T17:03:26.609+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-03T17:03:26.622+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
