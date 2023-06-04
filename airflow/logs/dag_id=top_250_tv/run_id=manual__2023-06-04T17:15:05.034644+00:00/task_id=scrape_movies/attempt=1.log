@@ -1,0 +1,26 @@
+[2023-06-04T17:15:06.855+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: top_250_tv.scrape_movies manual__2023-06-04T17:15:05.034644+00:00 [queued]>
+[2023-06-04T17:15:06.860+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: top_250_tv.scrape_movies manual__2023-06-04T17:15:05.034644+00:00 [queued]>
+[2023-06-04T17:15:06.860+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-04T17:15:06.869+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): scrape_movies> on 2023-06-04 17:15:05.034644+00:00
+[2023-06-04T17:15:06.874+0000] {standard_task_runner.py:57} INFO - Started process 9778 to run task
+[2023-06-04T17:15:06.878+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'top_250_tv', 'scrape_movies', 'manual__2023-06-04T17:15:05.034644+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/top_250_tv.py', '--cfg-path', '/tmp/tmphlip2n1k']
+[2023-06-04T17:15:06.878+0000] {standard_task_runner.py:85} INFO - Job 119: Subtask scrape_movies
+[2023-06-04T17:15:06.917+0000] {task_command.py:410} INFO - Running <TaskInstance: top_250_tv.scrape_movies manual__2023-06-04T17:15:05.034644+00:00 [running]> on host 7633a4fabdb3
+[2023-06-04T17:15:06.985+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='top_250_tv' AIRFLOW_CTX_TASK_ID='scrape_movies' AIRFLOW_CTX_EXECUTION_DATE='2023-06-04T17:15:05.034644+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-04T17:15:05.034644+00:00'
+[2023-06-04T17:15:08.086+0000] {python.py:183} INFO - Done. Returned value was:     movie_id        movie_name  ...  user_votings  update_date
+0          1        Succession  ...        201455   2023-06-04
+1          2         Ted Lasso  ...        272282   2023-06-04
+2          3              Silo  ...         18956   2023-06-04
+3          4             FUBAR  ...         12859   2023-06-04
+4          5      Love & Death  ...         15909   2023-06-04
+..       ...               ...  ...           ...          ...
+95        96      Happy Valley  ...         55380   2023-06-04
+96        97      Vinland Saga  ...         50609   2023-06-04
+97        98         Wednesday  ...        319821   2023-06-04
+98        99  Midsomer Murders  ...         35898   2023-06-04
+99       100          The Bear  ...         92792   2023-06-04
+
+[100 rows x 6 columns]
+[2023-06-04T17:15:08.154+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=top_250_tv, task_id=scrape_movies, execution_date=20230604T171505, start_date=20230604T171506, end_date=20230604T171508
+[2023-06-04T17:15:08.172+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-04T17:15:08.188+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check
