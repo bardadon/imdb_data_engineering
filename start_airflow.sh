@@ -52,5 +52,11 @@ echo PYTHONPATH=$(pwd) >> .env
 
 export PYTHONPATH=$(pwd)
 
+# Add directories to the dags folder
+cd airflow/dags
+
+mkdir data
+mkdir helper
+
 # Start airflow
 docker-compose up -d

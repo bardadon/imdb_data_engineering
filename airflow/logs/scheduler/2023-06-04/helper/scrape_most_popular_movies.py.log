@@ -1,0 +1,250 @@
+[2023-06-04T08:48:11.497+0000] {processor.py:157} INFO - Started process (PID=9394) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:48:11.498+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:48:11.498+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:48:11.498+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:48:12.099+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:48:12.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.614 seconds
+[2023-06-04T08:48:34.062+0000] {processor.py:157} INFO - Started process (PID=9481) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:48:34.063+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:48:34.064+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:48:34.063+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:48:34.678+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:48:34.688+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.628 seconds
+[2023-06-04T08:49:05.529+0000] {processor.py:157} INFO - Started process (PID=9591) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:49:05.530+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:49:05.531+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:49:05.530+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:49:06.051+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:49:06.091+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.565 seconds
+[2023-06-04T08:49:36.819+0000] {processor.py:157} INFO - Started process (PID=9695) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:49:36.821+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:49:36.821+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:49:36.821+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:49:37.372+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:49:37.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.565 seconds
+[2023-06-04T08:50:07.977+0000] {processor.py:157} INFO - Started process (PID=9798) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:50:07.978+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:50:07.979+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:50:07.978+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:50:08.537+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:50:08.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.570 seconds
+[2023-06-04T08:50:38.649+0000] {processor.py:157} INFO - Started process (PID=9901) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:50:38.697+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:50:38.698+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:50:38.698+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:50:39.319+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:50:39.329+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.682 seconds
+[2023-06-04T08:51:09.526+0000] {processor.py:157} INFO - Started process (PID=10005) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:51:09.526+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:51:09.527+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:51:09.526+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:51:10.058+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:51:10.069+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.545 seconds
+[2023-06-04T08:51:40.786+0000] {processor.py:157} INFO - Started process (PID=10110) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:51:40.787+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:51:40.787+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:51:40.787+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:51:41.403+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:51:41.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.628 seconds
+[2023-06-04T08:52:11.923+0000] {processor.py:157} INFO - Started process (PID=10230) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:52:11.923+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:52:11.924+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:52:11.924+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:52:12.446+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:52:12.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.535 seconds
+[2023-06-04T08:52:42.561+0000] {processor.py:157} INFO - Started process (PID=10354) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:52:42.562+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:52:42.562+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:52:42.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:52:43.106+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:52:43.115+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.556 seconds
+[2023-06-04T08:53:13.234+0000] {processor.py:157} INFO - Started process (PID=10491) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:53:13.235+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:53:13.235+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:53:13.235+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:53:13.843+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:53:13.857+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.626 seconds
+[2023-06-04T08:53:44.568+0000] {processor.py:157} INFO - Started process (PID=10608) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:53:44.568+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:53:44.569+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:53:44.569+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:53:45.098+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:53:45.107+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.542 seconds
+[2023-06-04T08:54:15.828+0000] {processor.py:157} INFO - Started process (PID=10724) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:54:15.829+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:54:15.830+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:54:15.829+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:54:16.368+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:54:16.377+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.551 seconds
+[2023-06-04T08:54:46.631+0000] {processor.py:157} INFO - Started process (PID=10840) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:54:46.631+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:54:46.632+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:54:46.632+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:54:47.142+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:54:47.151+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.522 seconds
+[2023-06-04T08:55:17.713+0000] {processor.py:157} INFO - Started process (PID=10956) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:55:17.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:55:17.715+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:55:17.715+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:55:18.198+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:55:18.206+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.496 seconds
+[2023-06-04T08:55:48.651+0000] {processor.py:157} INFO - Started process (PID=11073) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:55:48.652+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:55:48.654+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:55:48.653+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:55:49.157+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:55:49.165+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.518 seconds
+[2023-06-04T08:56:19.766+0000] {processor.py:157} INFO - Started process (PID=11189) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:56:19.767+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:56:19.767+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:56:19.767+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:56:20.259+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:56:20.268+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.504 seconds
+[2023-06-04T08:56:50.446+0000] {processor.py:157} INFO - Started process (PID=11305) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:56:50.447+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:56:50.447+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:56:50.447+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:56:50.949+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:56:50.957+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.514 seconds
+[2023-06-04T08:57:15.216+0000] {processor.py:157} INFO - Started process (PID=11395) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:57:15.217+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:57:15.217+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:57:15.217+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:57:15.840+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:57:15.848+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.635 seconds
+[2023-06-04T08:57:46.742+0000] {processor.py:157} INFO - Started process (PID=11512) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:57:46.743+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:57:46.744+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:57:46.744+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:57:47.265+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:57:47.274+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.534 seconds
+[2023-06-04T08:58:17.714+0000] {processor.py:157} INFO - Started process (PID=11628) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:58:17.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:58:17.715+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:58:17.715+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:58:18.265+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:58:18.273+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.562 seconds
+[2023-06-04T08:58:48.770+0000] {processor.py:157} INFO - Started process (PID=11744) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:58:48.771+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:58:48.771+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:58:48.771+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:58:49.323+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:58:49.332+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.564 seconds
+[2023-06-04T08:59:19.638+0000] {processor.py:157} INFO - Started process (PID=11861) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:59:19.639+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:59:19.640+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:59:19.639+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:59:20.221+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:59:20.230+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.594 seconds
+[2023-06-04T08:59:50.831+0000] {processor.py:157} INFO - Started process (PID=11978) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:59:50.832+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T08:59:50.833+0000] {logging_mixin.py:149} INFO - [2023-06-04T08:59:50.832+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:59:51.415+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T08:59:51.424+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.596 seconds
+[2023-06-04T09:00:21.640+0000] {processor.py:157} INFO - Started process (PID=12096) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:00:21.641+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:00:21.641+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:00:21.641+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:00:22.186+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:00:22.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.557 seconds
+[2023-06-04T09:00:52.552+0000] {processor.py:157} INFO - Started process (PID=12225) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:00:52.554+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:00:52.554+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:00:52.554+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:00:53.055+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:00:53.064+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.515 seconds
+[2023-06-04T09:01:23.143+0000] {processor.py:157} INFO - Started process (PID=12341) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:01:23.144+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:01:23.144+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:01:23.144+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:01:23.639+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:01:23.647+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.506 seconds
+[2023-06-04T09:01:53.849+0000] {processor.py:157} INFO - Started process (PID=12457) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:01:53.850+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:01:53.850+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:01:53.850+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:01:54.360+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:01:54.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.522 seconds
+[2023-06-04T09:02:25.209+0000] {processor.py:157} INFO - Started process (PID=12574) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:02:25.210+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:02:25.210+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:02:25.210+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:02:25.727+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:02:25.737+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.530 seconds
+[2023-06-04T09:02:54.488+0000] {processor.py:157} INFO - Started process (PID=12677) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:02:54.489+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:02:54.489+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:02:54.489+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:02:55.141+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:02:55.150+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.665 seconds
+[2023-06-04T09:03:25.779+0000] {processor.py:157} INFO - Started process (PID=12794) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:03:25.781+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:03:25.781+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:03:25.781+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:03:26.493+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:03:26.501+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.724 seconds
+[2023-06-04T09:03:57.162+0000] {processor.py:157} INFO - Started process (PID=12910) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:03:57.162+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:03:57.163+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:03:57.163+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:03:57.725+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:03:57.733+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.574 seconds
+[2023-06-04T09:04:27.829+0000] {processor.py:157} INFO - Started process (PID=13026) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:04:27.830+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:04:27.831+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:04:27.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:04:28.398+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:04:28.406+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.579 seconds
+[2023-06-04T09:04:58.984+0000] {processor.py:157} INFO - Started process (PID=13143) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:04:58.986+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:04:58.986+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:04:58.986+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:04:59.640+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:04:59.648+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.666 seconds
+[2023-06-04T09:05:30.382+0000] {processor.py:157} INFO - Started process (PID=13260) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:05:30.383+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:05:30.383+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:05:30.383+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:05:30.969+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:05:30.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.599 seconds
+[2023-06-04T09:06:01.040+0000] {processor.py:157} INFO - Started process (PID=13377) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:06:01.041+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:06:01.042+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:06:01.041+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:06:01.664+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:06:01.672+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.635 seconds
+[2023-06-04T09:06:31.823+0000] {processor.py:157} INFO - Started process (PID=13493) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:06:31.824+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:06:31.825+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:06:31.825+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:06:32.423+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:06:32.430+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.610 seconds
+[2023-06-04T09:07:02.804+0000] {processor.py:157} INFO - Started process (PID=13610) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:07:02.805+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:07:02.805+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:07:02.805+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:07:03.393+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:07:03.401+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.599 seconds
+[2023-06-04T09:07:28.627+0000] {processor.py:157} INFO - Started process (PID=13725) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:07:28.628+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:07:28.628+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:07:28.628+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:07:29.182+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:07:29.191+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.566 seconds
+[2023-06-04T09:07:59.990+0000] {processor.py:157} INFO - Started process (PID=13841) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:07:59.991+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:07:59.991+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:07:59.991+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:08:00.534+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:08:00.542+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.554 seconds
+[2023-06-04T09:08:31.461+0000] {processor.py:157} INFO - Started process (PID=13957) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:08:31.461+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:08:31.462+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:08:31.462+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:08:31.991+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:08:31.999+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.540 seconds
+[2023-06-04T09:09:02.786+0000] {processor.py:157} INFO - Started process (PID=14073) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:09:02.787+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:09:02.788+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:09:02.787+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:09:03.394+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:09:03.402+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.619 seconds
+[2023-06-04T09:09:34.139+0000] {processor.py:157} INFO - Started process (PID=14189) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:09:34.139+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:09:34.140+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:09:34.140+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:09:34.672+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:09:34.680+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.544 seconds
+[2023-06-04T09:10:04.740+0000] {processor.py:157} INFO - Started process (PID=14307) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:10:04.741+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:10:04.741+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:10:04.741+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:10:05.254+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:10:05.263+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.525 seconds
+[2023-06-04T09:10:35.607+0000] {processor.py:157} INFO - Started process (PID=14423) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:10:35.609+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:10:35.609+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:10:35.609+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:10:36.139+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:10:36.148+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.544 seconds
+[2023-06-04T09:11:06.818+0000] {processor.py:157} INFO - Started process (PID=14540) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:11:06.819+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:11:06.820+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:11:06.819+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:11:07.348+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:11:07.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.541 seconds
+[2023-06-04T09:11:37.535+0000] {processor.py:157} INFO - Started process (PID=14656) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:11:37.536+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:11:37.537+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:11:37.537+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:11:38.121+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:11:38.133+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.600 seconds
+[2023-06-04T09:12:08.755+0000] {processor.py:157} INFO - Started process (PID=14772) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:12:08.756+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:12:08.757+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:12:08.756+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:12:09.338+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:12:09.347+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.595 seconds
+[2023-06-04T09:12:39.985+0000] {processor.py:157} INFO - Started process (PID=14889) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:12:39.986+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:12:39.986+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:12:39.986+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:12:40.582+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:12:40.590+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.607 seconds
+[2023-06-04T09:13:11.154+0000] {processor.py:157} INFO - Started process (PID=15006) to work on /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:13:11.155+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_most_popular_movies.py for tasks to queue
+[2023-06-04T09:13:11.155+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:13:11.155+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:13:11.739+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_most_popular_movies.py
+[2023-06-04T09:13:11.749+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_most_popular_movies.py took 0.598 seconds

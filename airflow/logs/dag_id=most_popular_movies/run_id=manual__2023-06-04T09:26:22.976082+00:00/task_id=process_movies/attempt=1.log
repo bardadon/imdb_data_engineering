@@ -1,0 +1,26 @@
+[2023-06-04T09:26:26.870+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: most_popular_movies.process_movies manual__2023-06-04T09:26:22.976082+00:00 [queued]>
+[2023-06-04T09:26:26.876+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: most_popular_movies.process_movies manual__2023-06-04T09:26:22.976082+00:00 [queued]>
+[2023-06-04T09:26:26.876+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-04T09:26:26.885+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): process_movies> on 2023-06-04 09:26:22.976082+00:00
+[2023-06-04T09:26:26.889+0000] {standard_task_runner.py:57} INFO - Started process 1928 to run task
+[2023-06-04T09:26:26.892+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'most_popular_movies', 'process_movies', 'manual__2023-06-04T09:26:22.976082+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/most_popular_movies.py', '--cfg-path', '/tmp/tmpm438c44p']
+[2023-06-04T09:26:26.892+0000] {standard_task_runner.py:85} INFO - Job 81: Subtask process_movies
+[2023-06-04T09:26:26.922+0000] {task_command.py:410} INFO - Running <TaskInstance: most_popular_movies.process_movies manual__2023-06-04T09:26:22.976082+00:00 [running]> on host 7633a4fabdb3
+[2023-06-04T09:26:26.991+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='most_popular_movies' AIRFLOW_CTX_TASK_ID='process_movies' AIRFLOW_CTX_EXECUTION_DATE='2023-06-04T09:26:22.976082+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-04T09:26:22.976082+00:00'
+[2023-06-04T09:26:26.999+0000] {python.py:183} INFO - Done. Returned value was:                           movie_name  movie_rating                       date
+0                 The Little Mermaid           7.6 2023-06-04 09:26:26.995345
+1                             Fast X           6.3 2023-06-04 09:26:26.995345
+2     Guardians of the Galaxy Vol. 3           8.2 2023-06-04 09:26:26.995345
+3         Killers of the Flower Moon           9.5 2023-06-04 09:26:26.995345
+4               John Wick: Chapter 4           8.0 2023-06-04 09:26:26.995345
+..                               ...           ...                        ...
+92                     The Fabelmans           7.6 2023-06-04 09:26:26.995345
+93                         Bama Rush           3.9 2023-06-04 09:26:26.995345
+94              You Hurt My Feelings           7.2 2023-06-04 09:26:26.995345
+95                         Nefarious           6.8 2023-06-04 09:26:26.995345
+96  Once Upon a Time in... Hollywood           7.6 2023-06-04 09:26:26.995345
+
+[97 rows x 3 columns]
+[2023-06-04T09:26:27.071+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=most_popular_movies, task_id=process_movies, execution_date=20230604T092622, start_date=20230604T092626, end_date=20230604T092627
+[2023-06-04T09:26:27.103+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-04T09:26:27.121+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

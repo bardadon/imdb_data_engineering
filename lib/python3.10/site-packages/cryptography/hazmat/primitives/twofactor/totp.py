@@ -8,17 +8,17 @@ from cryptography.hazmat.primitives import constant_time
 from cryptography.hazmat.primitives.twofactor import InvalidToken
 from cryptography.hazmat.primitives.twofactor.hotp import (
     HOTP,
-    _ALLOWED_HASH_TYPES,
+    HOTPHashTypes,
     _generate_uri,
 )
 
 
-class TOTP(object):
+class TOTP:
     def __init__(
         self,
         key: bytes,
         length: int,
-        algorithm: _ALLOWED_HASH_TYPES,
+        algorithm: HOTPHashTypes,
         time_step: int,
         backend: typing.Any = None,
         enforce_key_length: bool = True,

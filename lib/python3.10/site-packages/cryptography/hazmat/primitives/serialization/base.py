@@ -7,8 +7,8 @@ import typing
 
 from cryptography.hazmat.primitives.asymmetric import dh
 from cryptography.hazmat.primitives.asymmetric.types import (
-    PRIVATE_KEY_TYPES,
-    PUBLIC_KEY_TYPES,
+    PrivateKeyTypes,
+    PublicKeyTypes,
 )
 
 
@@ -16,15 +16,19 @@ def load_pem_private_key(
     data: bytes,
     password: typing.Optional[bytes],
     backend: typing.Any = None,
-) -> PRIVATE_KEY_TYPES:
+    *,
+    unsafe_skip_rsa_key_validation: bool = False,
+) -> PrivateKeyTypes:
     from cryptography.hazmat.backends.openssl.backend import backend as ossl
 
-    return ossl.load_pem_private_key(data, password)
+    return ossl.load_pem_private_key(
+        data, password, unsafe_skip_rsa_key_validation
+    )
 
 
 def load_pem_public_key(
     data: bytes, backend: typing.Any = None
-) -> PUBLIC_KEY_TYPES:
+) -> PublicKeyTypes:
     from cryptography.hazmat.backends.openssl.backend import backend as ossl
 
     return ossl.load_pem_public_key(data)
@@ -42,15 +46,19 @@ def load_der_private_key(
     data: bytes,
     password: typing.Optional[bytes],
     backend: typing.Any = None,
-) -> PRIVATE_KEY_TYPES:
+    *,
+    unsafe_skip_rsa_key_validation: bool = False,
+) -> PrivateKeyTypes:
     from cryptography.hazmat.backends.openssl.backend import backend as ossl
 
-    return ossl.load_der_private_key(data, password)
+    return ossl.load_der_private_key(
+        data, password, unsafe_skip_rsa_key_validation
+    )
 
 
 def load_der_public_key(
     data: bytes, backend: typing.Any = None
-) -> PUBLIC_KEY_TYPES:
+) -> PublicKeyTypes:
     from cryptography.hazmat.backends.openssl.backend import backend as ossl
 
     return ossl.load_der_public_key(data)

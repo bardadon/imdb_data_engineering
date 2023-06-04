@@ -1,0 +1,10 @@
+[2023-06-04T09:13:13.050+0000] {processor.py:157} INFO - Started process (PID=15035) to work on /opt/airflow/dags/helper/scrape_top_250_tv.py
+[2023-06-04T09:13:13.051+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_top_250_tv.py for tasks to queue
+[2023-06-04T09:13:13.051+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:13:13.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_top_250_tv.py
+[2023-06-04T09:13:13.688+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_top_250_tv.py
+[2023-06-04T09:13:13.697+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_top_250_tv.py took 0.649 seconds
+[2023-06-04T09:13:18.793+0000] {processor.py:157} INFO - Started process (PID=15070) to work on /opt/airflow/dags/helper/scrape_top_250_tv.py
+[2023-06-04T09:13:18.794+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_top_250_tv.py for tasks to queue
+[2023-06-04T09:13:18.794+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:13:18.794+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_top_250_tv.py
+[2023-06-04T09:13:19.395+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_top_250_tv.py
+[2023-06-04T09:13:19.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_top_250_tv.py took 0.614 seconds

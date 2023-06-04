@@ -11,8 +11,7 @@ from email.utils import parseaddr
 from cryptography.x509.name import Name
 from cryptography.x509.oid import ObjectIdentifier
 
-
-_IPADDRESS_TYPES = typing.Union[
+_IPAddressTypes = typing.Union[
     ipaddress.IPv4Address,
     ipaddress.IPv6Address,
     ipaddress.IPv4Network,
@@ -25,7 +24,8 @@ class UnsupportedGeneralNameType(Exception):
 
 
 class GeneralName(metaclass=abc.ABCMeta):
-    @abc.abstractproperty
+    @property
+    @abc.abstractmethod
     def value(self) -> typing.Any:
         """
         Return the value of the object
@@ -65,16 +65,13 @@ class RFC822Name(GeneralName):
         return instance
 
     def __repr__(self) -> str:
-        return "<RFC822Name(value={0!r})>".format(self.value)
+        return f"<RFC822Name(value={self.value!r})>"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, RFC822Name):
             return NotImplemented
 
         return self.value == other.value
-
-    def __ne__(self, other: object) -> bool:
-        return not self == other
 
     def __hash__(self) -> int:
         return hash(self.value)
@@ -107,16 +104,13 @@ class DNSName(GeneralName):
         return instance
 
     def __repr__(self) -> str:
-        return "<DNSName(value={0!r})>".format(self.value)
+        return f"<DNSName(value={self.value!r})>"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, DNSName):
             return NotImplemented
 
         return self.value == other.value
-
-    def __ne__(self, other: object) -> bool:
-        return not self == other
 
     def __hash__(self) -> int:
         return hash(self.value)
@@ -151,16 +145,13 @@ class UniformResourceIdentifier(GeneralName):
         return instance
 
     def __repr__(self) -> str:
-        return "<UniformResourceIdentifier(value={0!r})>".format(self.value)
+        return f"<UniformResourceIdentifier(value={self.value!r})>"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, UniformResourceIdentifier):
             return NotImplemented
 
         return self.value == other.value
-
-    def __ne__(self, other: object) -> bool:
-        return not self == other
 
     def __hash__(self) -> int:
         return hash(self.value)
@@ -178,16 +169,13 @@ class DirectoryName(GeneralName):
         return self._value
 
     def __repr__(self) -> str:
-        return "<DirectoryName(value={})>".format(self.value)
+        return f"<DirectoryName(value={self.value})>"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, DirectoryName):
             return NotImplemented
 
         return self.value == other.value
-
-    def __ne__(self, other: object) -> bool:
-        return not self == other
 
     def __hash__(self) -> int:
         return hash(self.value)
@@ -205,7 +193,7 @@ class RegisteredID(GeneralName):
         return self._value
 
     def __repr__(self) -> str:
-        return "<RegisteredID(value={})>".format(self.value)
+        return f"<RegisteredID(value={self.value})>"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, RegisteredID):
@@ -213,15 +201,12 @@ class RegisteredID(GeneralName):
 
         return self.value == other.value
 
-    def __ne__(self, other: object) -> bool:
-        return not self == other
-
     def __hash__(self) -> int:
         return hash(self.value)
 
 
 class IPAddress(GeneralName):
-    def __init__(self, value: _IPADDRESS_TYPES) -> None:
+    def __init__(self, value: _IPAddressTypes) -> None:
         if not isinstance(
             value,
             (
@@ -240,7 +225,7 @@ class IPAddress(GeneralName):
         self._value = value
 
     @property
-    def value(self) -> _IPADDRESS_TYPES:
+    def value(self) -> _IPAddressTypes:
         return self._value
 
     def _packed(self) -> bytes:
@@ -254,16 +239,13 @@ class IPAddress(GeneralName):
             )
 
     def __repr__(self) -> str:
-        return "<IPAddress(value={})>".format(self.value)
+        return f"<IPAddress(value={self.value})>"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, IPAddress):
             return NotImplemented
 
         return self.value == other.value
-
-    def __ne__(self, other: object) -> bool:
-        return not self == other
 
     def __hash__(self) -> int:
         return hash(self.value)
@@ -297,9 +279,6 @@ class OtherName(GeneralName):
             return NotImplemented
 
         return self.type_id == other.type_id and self.value == other.value
-
-    def __ne__(self, other: object) -> bool:
-        return not self == other
 
     def __hash__(self) -> int:
         return hash((self.type_id, self.value))

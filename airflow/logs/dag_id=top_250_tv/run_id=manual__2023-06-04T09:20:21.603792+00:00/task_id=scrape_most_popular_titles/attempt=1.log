@@ -1,0 +1,26 @@
+[2023-06-04T09:20:23.056+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: top_250_tv.scrape_most_popular_titles manual__2023-06-04T09:20:21.603792+00:00 [queued]>
+[2023-06-04T09:20:23.064+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: top_250_tv.scrape_most_popular_titles manual__2023-06-04T09:20:21.603792+00:00 [queued]>
+[2023-06-04T09:20:23.064+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-04T09:20:23.077+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): scrape_most_popular_titles> on 2023-06-04 09:20:21.603792+00:00
+[2023-06-04T09:20:23.083+0000] {standard_task_runner.py:57} INFO - Started process 1730 to run task
+[2023-06-04T09:20:23.089+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'top_250_tv', 'scrape_most_popular_titles', 'manual__2023-06-04T09:20:21.603792+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/top_250_tv.py', '--cfg-path', '/tmp/tmp_9r1ohvp']
+[2023-06-04T09:20:23.090+0000] {standard_task_runner.py:85} INFO - Job 70: Subtask scrape_most_popular_titles
+[2023-06-04T09:20:23.139+0000] {task_command.py:410} INFO - Running <TaskInstance: top_250_tv.scrape_most_popular_titles manual__2023-06-04T09:20:21.603792+00:00 [running]> on host 7633a4fabdb3
+[2023-06-04T09:20:23.205+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='top_250_tv' AIRFLOW_CTX_TASK_ID='scrape_most_popular_titles' AIRFLOW_CTX_EXECUTION_DATE='2023-06-04T09:20:21.603792+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-04T09:20:21.603792+00:00'
+[2023-06-04T09:20:23.207+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/top_250_tv.py", line 23, in scrape_most_popular_titles
+    soup = _get_soup(chart='top_250_tv')
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 43, in _get_soup
+    response = requests.get(url)
+UnboundLocalError: local variable 'url' referenced before assignment
+[2023-06-04T09:20:23.213+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=top_250_tv, task_id=scrape_most_popular_titles, execution_date=20230604T092021, start_date=20230604T092023, end_date=20230604T092023
+[2023-06-04T09:20:23.221+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 70 for task scrape_most_popular_titles (local variable 'url' referenced before assignment; 1730)
+[2023-06-04T09:20:23.261+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-04T09:20:23.283+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

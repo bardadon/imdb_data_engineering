@@ -6,6 +6,7 @@
 import abc
 
 from cryptography.exceptions import UnsupportedAlgorithm, _Reasons
+from cryptography.hazmat.bindings._rust import openssl as rust_openssl
 from cryptography.hazmat.primitives import _serialization
 
 
@@ -31,6 +32,18 @@ class X25519PublicKey(metaclass=abc.ABCMeta):
         """
         The serialized bytes of the public key.
         """
+
+    @abc.abstractmethod
+    def public_bytes_raw(self) -> bytes:
+        """
+        The raw bytes of the public key.
+        Equivalent to public_bytes(Raw, Raw).
+        """
+
+
+# For LibreSSL
+if hasattr(rust_openssl, "x25519"):
+    X25519PublicKey.register(rust_openssl.x25519.X25519PublicKey)
 
 
 class X25519PrivateKey(metaclass=abc.ABCMeta):
@@ -60,7 +73,7 @@ class X25519PrivateKey(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def public_key(self) -> X25519PublicKey:
         """
-        The serialized bytes of the public key.
+        Returns the public key assosciated with this private key
         """
 
     @abc.abstractmethod
@@ -75,7 +88,19 @@ class X25519PrivateKey(metaclass=abc.ABCMeta):
         """
 
     @abc.abstractmethod
+    def private_bytes_raw(self) -> bytes:
+        """
+        The raw bytes of the private key.
+        Equivalent to private_bytes(Raw, Raw, NoEncryption()).
+        """
+
+    @abc.abstractmethod
     def exchange(self, peer_public_key: X25519PublicKey) -> bytes:
         """
         Performs a key exchange operation using the provided peer's public key.
         """
+
+
+# For LibreSSL
+if hasattr(rust_openssl, "x25519"):
+    X25519PrivateKey.register(rust_openssl.x25519.X25519PrivateKey)
