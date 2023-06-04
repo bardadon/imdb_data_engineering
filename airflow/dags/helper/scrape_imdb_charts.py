@@ -51,54 +51,61 @@ def _scrape_movies(soup):
     Returns:
         - movie_dict(dict) = Dictionary of movie names and ratings
     '''
-
     # Find all movie names in the url
     movie_names = []
+    movie_years = []
     movie_ratings = []
+    user_votings = []
 
     # Find all movie in the url
     titlesRefs = soup.find_all('td', {'class':'titleColumn'})
     ratingsRefs = soup.find_all('td', {'class':'ratingColumn imdbRating'})
 
-    # Collect movies into title and rating list
+    # Collect movie title, release year, ratings and user votings
     for title in titlesRefs:
-        movie_names.append(title.find("a").text)
+        try:
+            movie_names.append(title.find("a").text)
+        except:
+            print('Missing title. Replacing with -1')
+            movie_names.append(-1)
+        
+        try:
+            movie_years.append(int(title.find("span").text[1:-1]))
+        except:
+            print('Missing year. Replacing with -1')
+            movie_years.append(-1)
 
     for rating in ratingsRefs:
         try:
-            movie_ratings.append(float(rating.find("strong").text))
+            movie_ratings.append(float(rating.find("strong").text))    
         except:
-            print('No rating found for this movie')
+            print('Missing rating. Replacing with -1')
             movie_ratings.append(-1)
 
-    # Combine title and rating list into a dictionary
-    movie_dict = dict(zip(movie_names, movie_ratings))
-    
-    return movie_dict
-
-def _process_movies(movie_dict):
-
-    '''
-    Process movie dict into a dataframe.
-    Args:
-        - movie_dict(dict) = Dictionary of movie names and ratings
-    Returns:
-        - movies_df(pandas.core.frame.DataFrame) = Dataframe of movie names and ratings
-    '''
+        try:
+            votes_str = rating.find("strong").attrs['title']
+            votes_str = votes_str.split(' ')[3]
+            votes_int = int(votes_str.replace(',', ''))
+            user_votings.append(votes_int)
+        except:
+            user_votings.append(-1)
 
     # Create a dataframe
-    movies_df = pd.DataFrame(movie_dict.items(), columns=['movie_name', 'movie_rating'])
+    movie_df = pd.DataFrame({'movie_name': movie_names, 'movie_year': movie_years, 'movie_rating': movie_ratings, 'user_votings': user_votings})
 
-    # Add a date column
-    movies_df['date'] = datetime.datetime.today()
+    # Add movie_id
+    movie_df['movie_id'] = movie_df.index + 1
 
-    # Export to csv
-    movies_df.to_csv('/opt/airflow/dags/data/top_250_movies.csv', index=False, header=True, sep=',')
+    # set date
+    movie_df['update_date'] = datetime.datetime.today().strftime('%Y-%m-%d')
 
-    return movies_df
+    # reorder columns
+    movie_df = movie_df[['movie_id', 'movie_name', 'movie_year', 'movie_rating', 'user_votings' ,'update_date']]
+
+    return movie_df
 
 # Create a dataset called test_dataset
-def _getOrCreate_dataset(dataset_name :str, project_id = bigquery_client.project) -> bigquery.dataset.Dataset:
+def _getOrCreate_dataset(dataset_name :str) -> bigquery.dataset.Dataset:
 
     '''
     Get dataset. If the dataset does not exists, create it.
@@ -173,7 +180,7 @@ def _getOrCreate_table(dataset_name:str, table_name:str) -> bigquery.table.Table
     finally:
         return table
 
-def _load_to_bigQuery(movie_names, chart, dataset_name='imdb', project_name = 'imdb-388708', date_to_load = datetime.datetime.today()):
+def _load_to_bigQuery(movie_names, chart, dataset_name='imdb'):
 
     '''
     Load data into BigQuery table.
@@ -190,9 +197,6 @@ def _load_to_bigQuery(movie_names, chart, dataset_name='imdb', project_name = 'i
         - The function will create a new dataset and table if they do not exist.
         - The function will overwrite the table if it already exists.
     '''
-
-    # Create a dataset
-    dataset = _getOrCreate_dataset(dataset_name, project_name)
 
     if chart == 'most_popular_movies':
        table_name = 'most_popular_movies'
@@ -211,10 +215,14 @@ def _load_to_bigQuery(movie_names, chart, dataset_name='imdb', project_name = 'i
 
     # Create a job config
     job_config = bigquery.LoadJobConfig(
+        source_format=bigquery.SourceFormat.CSV,
         schema=[
-            bigquery.SchemaField("movie_name", "STRING"),
-            bigquery.SchemaField("movie_rating", "FLOAT"),
-            bigquery.SchemaField("date", "DATE")
+            bigquery.SchemaField("movie_id", bigquery.enums.SqlTypeNames.INT64),
+            bigquery.SchemaField("movie_name", bigquery.enums.SqlTypeNames.STRING),
+            bigquery.SchemaField("movie_year", bigquery.enums.SqlTypeNames.INT64),
+            bigquery.SchemaField("movie_rating", bigquery.enums.SqlTypeNames.FLOAT64),
+            bigquery.SchemaField("user_votings", bigquery.enums.SqlTypeNames.INT64),
+            bigquery.SchemaField("update_date", bigquery.enums.SqlTypeNames.DATE),
         ],
         write_disposition="WRITE_TRUNCATE",
     )
@@ -231,14 +239,16 @@ def _load_to_bigQuery(movie_names, chart, dataset_name='imdb', project_name = 'i
     print("Loaded {} rows into {}:{}.".format(job.output_rows, dataset_name, table_name))
 
 def main():
-    soup = _get_soup()
-    movie_df = _scrape_movies(soup)
-    movies_df = _process_movies(movie_df)
+    soup = _get_soup(chart='top_250_movies')
+    movies_df = _scrape_movies(soup)
     print(movies_df.head())
-    _load_to_bigQuery(movies_df)
-    print(movie_df)
+    _load_to_bigQuery(movies_df, chart='top_250_movies')
+    print(movies_df.dtypes)
 
 
 
 if __name__ == '__main__':
     main()
+
+
+    
