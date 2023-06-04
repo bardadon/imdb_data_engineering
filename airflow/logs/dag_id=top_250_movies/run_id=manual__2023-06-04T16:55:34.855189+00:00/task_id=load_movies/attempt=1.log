@@ -1,0 +1,38 @@
+[2023-06-04T16:55:40.106+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: top_250_movies.load_movies manual__2023-06-04T16:55:34.855189+00:00 [queued]>
+[2023-06-04T16:55:40.113+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: top_250_movies.load_movies manual__2023-06-04T16:55:34.855189+00:00 [queued]>
+[2023-06-04T16:55:40.113+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-04T16:55:40.121+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): load_movies> on 2023-06-04 16:55:34.855189+00:00
+[2023-06-04T16:55:40.127+0000] {standard_task_runner.py:57} INFO - Started process 9361 to run task
+[2023-06-04T16:55:40.129+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'top_250_movies', 'load_movies', 'manual__2023-06-04T16:55:34.855189+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/top_250_movies.py', '--cfg-path', '/tmp/tmp7jy5r4wt']
+[2023-06-04T16:55:40.130+0000] {standard_task_runner.py:85} INFO - Job 114: Subtask load_movies
+[2023-06-04T16:55:40.161+0000] {task_command.py:410} INFO - Running <TaskInstance: top_250_movies.load_movies manual__2023-06-04T16:55:34.855189+00:00 [running]> on host 7633a4fabdb3
+[2023-06-04T16:55:40.306+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='top_250_movies' AIRFLOW_CTX_TASK_ID='load_movies' AIRFLOW_CTX_EXECUTION_DATE='2023-06-04T16:55:34.855189+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-04T16:55:34.855189+00:00'
+[2023-06-04T16:55:40.307+0000] {logging_mixin.py:149} INFO - Fetching Dataset...
+[2023-06-04T16:55:40.307+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 125, in _getOrCreate_dataset
+    dataset = bigquery_client.get_dataset(dataset_name)
+NameError: name 'bigquery_client' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/top_250_movies.py", line 30, in load_movies
+    _load_to_bigQuery(movies_df, chart='top_250_movies')
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 214, in _load_to_bigQuery
+    table = _getOrCreate_table(dataset_name, table_name)
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 158, in _getOrCreate_table
+    dataset = _getOrCreate_dataset(dataset_name)
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 132, in _getOrCreate_dataset
+    if e.code == 404:
+AttributeError: 'NameError' object has no attribute 'code'
+[2023-06-04T16:55:40.313+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=top_250_movies, task_id=load_movies, execution_date=20230604T165534, start_date=20230604T165540, end_date=20230604T165540
+[2023-06-04T16:55:40.321+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 114 for task load_movies ('NameError' object has no attribute 'code'; 9361)
+[2023-06-04T16:55:40.341+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-04T16:55:40.353+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -239,13 +239,11 @@ def _load_to_bigQuery(movie_names, chart, dataset_name='imdb'):
     print("Loaded {} rows into {}:{}.".format(job.output_rows, dataset_name, table_name))
 
 def main():
-    soup = _get_soup(chart='top_250_movies')
-    movies_df = _scrape_movies(soup)
-    print(movies_df.head())
-    _load_to_bigQuery(movies_df, chart='top_250_movies')
-    print(movies_df.dtypes)
-
-
+    #soup = _get_soup(chart='top_250_movies')
+    #movies_df = _scrape_movies(soup)
+    #print(movies_df.head())
+    #_load_to_bigQuery(movies_df, chart='top_250_movies')
+    pass
 
 if __name__ == '__main__':
     main()
