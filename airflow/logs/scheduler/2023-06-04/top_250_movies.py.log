@@ -4069,3 +4069,10 @@ ImportError: cannot import name '_process_movies' from 'helper.scrape_imdb_chart
 [2023-06-04T14:27:38.352+0000] {logging_mixin.py:149} INFO - [2023-06-04T14:27:38.351+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2023-06-04T14:27:38.369+0000] {logging_mixin.py:149} INFO - [2023-06-04T14:27:38.369+0000] {dag.py:3490} INFO - Setting next_dagrun for top_250_movies to 2023-06-04T14:27:38.308651+00:00, run_after=2023-06-05T14:27:38.308651+00:00
 [2023-06-04T14:27:38.385+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_250_movies.py took 0.673 seconds
+[2023-06-04T14:28:08.931+0000] {processor.py:157} INFO - Started process (PID=14825) to work on /opt/airflow/dags/top_250_movies.py
+[2023-06-04T14:28:08.932+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_250_movies.py for tasks to queue
+[2023-06-04T14:28:08.933+0000] {logging_mixin.py:149} INFO - [2023-06-04T14:28:08.933+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_250_movies.py
+[2023-06-04T14:28:09.520+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_250_movies']) retrieved from /opt/airflow/dags/top_250_movies.py
+[2023-06-04T14:28:09.571+0000] {logging_mixin.py:149} INFO - [2023-06-04T14:28:09.570+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T14:28:09.589+0000] {logging_mixin.py:149} INFO - [2023-06-04T14:28:09.588+0000] {dag.py:3490} INFO - Setting next_dagrun for top_250_movies to 2023-06-04T14:28:09.517264+00:00, run_after=2023-06-05T14:28:09.517264+00:00
+[2023-06-04T14:28:09.604+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_250_movies.py took 0.675 seconds
