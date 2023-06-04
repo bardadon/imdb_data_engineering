@@ -6229,3 +6229,24 @@ google.auth.exceptions.DefaultCredentialsError: Your default credentials were no
 [2023-06-04T17:36:54.495+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:36:54.494+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2023-06-04T17:36:54.511+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:36:54.511+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T17:36:54.448251+00:00, run_after=2023-06-05T17:36:54.448251+00:00
 [2023-06-04T17:36:54.525+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.652 seconds
+[2023-06-04T17:37:24.773+0000] {processor.py:157} INFO - Started process (PID=29893) to work on /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:37:24.774+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_english_movies.py for tasks to queue
+[2023-06-04T17:37:24.775+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:37:24.775+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:37:25.379+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_english_movies']) retrieved from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:37:25.430+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:37:25.429+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T17:37:25.448+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:37:25.447+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T17:37:25.376605+00:00, run_after=2023-06-05T17:37:25.376605+00:00
+[2023-06-04T17:37:25.464+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.694 seconds
+[2023-06-04T17:37:55.570+0000] {processor.py:157} INFO - Started process (PID=30022) to work on /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:37:55.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_english_movies.py for tasks to queue
+[2023-06-04T17:37:55.571+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:37:55.571+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:37:56.153+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_english_movies']) retrieved from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:37:56.190+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:37:56.190+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T17:37:56.207+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:37:56.207+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T17:37:56.151389+00:00, run_after=2023-06-05T17:37:56.151389+00:00
+[2023-06-04T17:37:56.222+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.655 seconds
+[2023-06-04T17:38:26.577+0000] {processor.py:157} INFO - Started process (PID=30151) to work on /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:38:26.578+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_english_movies.py for tasks to queue
+[2023-06-04T17:38:26.579+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:38:26.579+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:38:27.159+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_english_movies']) retrieved from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T17:38:27.201+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:38:27.201+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T17:38:27.219+0000] {logging_mixin.py:149} INFO - [2023-06-04T17:38:27.219+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T17:38:27.157903+00:00, run_after=2023-06-05T17:38:27.157903+00:00
+[2023-06-04T17:38:27.234+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.660 seconds
