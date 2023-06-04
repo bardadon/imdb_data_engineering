@@ -1795,3 +1795,31 @@ ImportError: cannot import name '_load_bigQuery_most_popular_movies' from 'helpe
 [2023-06-04T10:38:55.631+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:55.630+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2023-06-04T10:38:55.717+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:55.716+0000] {dag.py:3490} INFO - Setting next_dagrun for most_popular_movies to 2023-06-04T10:38:55.590888+00:00, run_after=2023-06-05T10:38:55.590888+00:00
 [2023-06-04T10:38:55.729+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/most_popular_movies.py took 0.675 seconds
+[2023-06-04T10:39:26.128+0000] {processor.py:157} INFO - Started process (PID=28438) to work on /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:39:26.130+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/most_popular_movies.py for tasks to queue
+[2023-06-04T10:39:26.130+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:26.130+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:39:26.690+0000] {processor.py:836} INFO - DAG(s) dict_keys(['most_popular_movies']) retrieved from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:39:26.815+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:26.815+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:39:26.835+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:26.835+0000] {dag.py:3490} INFO - Setting next_dagrun for most_popular_movies to 2023-06-04T10:39:26.687505+00:00, run_after=2023-06-05T10:39:26.687505+00:00
+[2023-06-04T10:39:26.852+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/most_popular_movies.py took 0.726 seconds
+[2023-06-04T10:39:56.903+0000] {processor.py:157} INFO - Started process (PID=28563) to work on /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:39:56.904+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/most_popular_movies.py for tasks to queue
+[2023-06-04T10:39:56.905+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:56.905+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:39:57.444+0000] {processor.py:836} INFO - DAG(s) dict_keys(['most_popular_movies']) retrieved from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:39:57.556+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:57.556+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:39:57.574+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:57.574+0000] {dag.py:3490} INFO - Setting next_dagrun for most_popular_movies to 2023-06-04T10:39:57.441325+00:00, run_after=2023-06-05T10:39:57.441325+00:00
+[2023-06-04T10:39:57.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/most_popular_movies.py took 0.687 seconds
+[2023-06-04T10:40:27.726+0000] {processor.py:157} INFO - Started process (PID=28694) to work on /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:40:27.727+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/most_popular_movies.py for tasks to queue
+[2023-06-04T10:40:27.728+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:27.728+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:40:28.297+0000] {processor.py:836} INFO - DAG(s) dict_keys(['most_popular_movies']) retrieved from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:40:28.339+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:28.338+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:40:28.423+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:28.423+0000] {dag.py:3490} INFO - Setting next_dagrun for most_popular_movies to 2023-06-04T10:40:28.294241+00:00, run_after=2023-06-05T10:40:28.294241+00:00
+[2023-06-04T10:40:28.437+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/most_popular_movies.py took 0.713 seconds
+[2023-06-04T10:40:59.653+0000] {processor.py:157} INFO - Started process (PID=28826) to work on /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:40:59.655+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/most_popular_movies.py for tasks to queue
+[2023-06-04T10:40:59.655+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:59.655+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:41:00.304+0000] {processor.py:836} INFO - DAG(s) dict_keys(['most_popular_movies']) retrieved from /opt/airflow/dags/most_popular_movies.py
+[2023-06-04T10:41:00.357+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:41:00.356+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:41:00.376+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:41:00.376+0000] {dag.py:3490} INFO - Setting next_dagrun for most_popular_movies to 2023-06-04T10:41:00.301696+00:00, run_after=2023-06-05T10:41:00.301696+00:00
+[2023-06-04T10:41:00.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/most_popular_movies.py took 0.742 seconds

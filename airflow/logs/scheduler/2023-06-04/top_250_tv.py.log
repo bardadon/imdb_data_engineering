@@ -842,3 +842,31 @@ ImportError: cannot import name '_load_bigQuery_top_250_tv' from 'helper.scrape_
 [2023-06-04T10:38:52.017+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:52.017+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2023-06-04T10:38:52.034+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:52.034+0000] {dag.py:3490} INFO - Setting next_dagrun for top_250_tv to 2023-06-04T10:38:51.895591+00:00, run_after=2023-06-05T10:38:51.895591+00:00
 [2023-06-04T10:38:52.049+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_250_tv.py took 0.793 seconds
+[2023-06-04T10:39:22.218+0000] {processor.py:157} INFO - Started process (PID=28375) to work on /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:39:22.219+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_250_tv.py for tasks to queue
+[2023-06-04T10:39:22.219+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:22.219+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:39:22.784+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_250_tv']) retrieved from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:39:22.887+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:22.887+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:39:22.903+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:22.903+0000] {dag.py:3490} INFO - Setting next_dagrun for top_250_tv to 2023-06-04T10:39:22.782335+00:00, run_after=2023-06-05T10:39:22.782335+00:00
+[2023-06-04T10:39:22.917+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_250_tv.py took 0.702 seconds
+[2023-06-04T10:39:53.160+0000] {processor.py:157} INFO - Started process (PID=28504) to work on /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:39:53.161+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_250_tv.py for tasks to queue
+[2023-06-04T10:39:53.161+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:53.161+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:39:53.764+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_250_tv']) retrieved from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:39:53.806+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:53.806+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:39:53.822+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:53.822+0000] {dag.py:3490} INFO - Setting next_dagrun for top_250_tv to 2023-06-04T10:39:53.761834+00:00, run_after=2023-06-05T10:39:53.761834+00:00
+[2023-06-04T10:39:53.906+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_250_tv.py took 0.749 seconds
+[2023-06-04T10:40:24.201+0000] {processor.py:157} INFO - Started process (PID=28634) to work on /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:40:24.202+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_250_tv.py for tasks to queue
+[2023-06-04T10:40:24.202+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:24.202+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:40:24.883+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_250_tv']) retrieved from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:40:24.927+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:24.926+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:40:24.944+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:24.943+0000] {dag.py:3490} INFO - Setting next_dagrun for top_250_tv to 2023-06-04T10:40:24.881162+00:00, run_after=2023-06-05T10:40:24.881162+00:00
+[2023-06-04T10:40:24.960+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_250_tv.py took 0.762 seconds
+[2023-06-04T10:40:55.545+0000] {processor.py:157} INFO - Started process (PID=28763) to work on /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:40:55.546+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_250_tv.py for tasks to queue
+[2023-06-04T10:40:55.547+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:55.547+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:40:56.080+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_250_tv']) retrieved from /opt/airflow/dags/top_250_tv.py
+[2023-06-04T10:40:56.190+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:56.190+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:40:56.206+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:56.206+0000] {dag.py:3490} INFO - Setting next_dagrun for top_250_tv to 2023-06-04T10:40:56.077488+00:00, run_after=2023-06-05T10:40:56.077488+00:00
+[2023-06-04T10:40:56.219+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_250_tv.py took 0.677 seconds

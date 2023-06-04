@@ -660,3 +660,31 @@
 [2023-06-04T10:38:51.016+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:51.015+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2023-06-04T10:38:51.034+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:51.034+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T10:38:50.910743+00:00, run_after=2023-06-05T10:38:50.910743+00:00
 [2023-06-04T10:38:51.055+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.671 seconds
+[2023-06-04T10:39:21.419+0000] {processor.py:157} INFO - Started process (PID=28348) to work on /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:39:21.420+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_english_movies.py for tasks to queue
+[2023-06-04T10:39:21.420+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:21.420+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:39:22.059+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_english_movies']) retrieved from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:39:22.167+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:22.167+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:39:22.184+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:22.183+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T10:39:22.056686+00:00, run_after=2023-06-05T10:39:22.056686+00:00
+[2023-06-04T10:39:22.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.782 seconds
+[2023-06-04T10:39:52.324+0000] {processor.py:157} INFO - Started process (PID=28477) to work on /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:39:52.326+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_english_movies.py for tasks to queue
+[2023-06-04T10:39:52.326+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:52.326+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:39:52.914+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_english_movies']) retrieved from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:39:52.956+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:52.955+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:39:52.972+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:39:52.972+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T10:39:52.911890+00:00, run_after=2023-06-05T10:39:52.911890+00:00
+[2023-06-04T10:39:53.060+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.741 seconds
+[2023-06-04T10:40:23.480+0000] {processor.py:157} INFO - Started process (PID=28607) to work on /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:40:23.481+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_english_movies.py for tasks to queue
+[2023-06-04T10:40:23.482+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:23.482+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:40:24.085+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_english_movies']) retrieved from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:40:24.124+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:24.123+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:40:24.139+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:24.139+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T10:40:24.082524+00:00, run_after=2023-06-05T10:40:24.082524+00:00
+[2023-06-04T10:40:24.154+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.676 seconds
+[2023-06-04T10:40:54.735+0000] {processor.py:157} INFO - Started process (PID=28736) to work on /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:40:54.736+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/top_english_movies.py for tasks to queue
+[2023-06-04T10:40:54.737+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:54.737+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:40:55.316+0000] {processor.py:836} INFO - DAG(s) dict_keys(['top_english_movies']) retrieved from /opt/airflow/dags/top_english_movies.py
+[2023-06-04T10:40:55.441+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:55.441+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-04T10:40:55.459+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:40:55.459+0000] {dag.py:3490} INFO - Setting next_dagrun for top_english_movies to 2023-06-04T10:40:55.313564+00:00, run_after=2023-06-05T10:40:55.313564+00:00
+[2023-06-04T10:40:55.473+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/top_english_movies.py took 0.740 seconds
