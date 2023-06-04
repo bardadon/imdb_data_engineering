@@ -1,0 +1,39 @@
+[2023-06-04T11:52:00.790+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: most_popular_movies.scrape_movies manual__2023-06-04T11:51:59.668527+00:00 [queued]>
+[2023-06-04T11:52:00.798+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: most_popular_movies.scrape_movies manual__2023-06-04T11:51:59.668527+00:00 [queued]>
+[2023-06-04T11:52:00.798+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-04T11:52:00.808+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): scrape_movies> on 2023-06-04 11:51:59.668527+00:00
+[2023-06-04T11:52:00.813+0000] {standard_task_runner.py:57} INFO - Started process 4226 to run task
+[2023-06-04T11:52:00.816+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'most_popular_movies', 'scrape_movies', 'manual__2023-06-04T11:51:59.668527+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/most_popular_movies.py', '--cfg-path', '/tmp/tmp_uagw3br']
+[2023-06-04T11:52:00.817+0000] {standard_task_runner.py:85} INFO - Job 105: Subtask scrape_movies
+[2023-06-04T11:52:00.851+0000] {task_command.py:410} INFO - Running <TaskInstance: most_popular_movies.scrape_movies manual__2023-06-04T11:51:59.668527+00:00 [running]> on host 7633a4fabdb3
+[2023-06-04T11:52:00.913+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='most_popular_movies' AIRFLOW_CTX_TASK_ID='scrape_movies' AIRFLOW_CTX_EXECUTION_DATE='2023-06-04T11:51:59.668527+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-04T11:51:59.668527+00:00'
+[2023-06-04T11:52:01.884+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.884+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.885+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.886+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.887+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.887+0000] {logging_mixin.py:149} INFO - Missing rating. Replacing with -1
+[2023-06-04T11:52:01.891+0000] {python.py:183} INFO - Done. Returned value was:     movie_id                        movie_name  ...  user_votings  update_date
+0          1                The Little Mermaid  ...         60200   2023-06-04
+1          2                            Fast X  ...         36347   2023-06-04
+2          3    Guardians of the Galaxy Vol. 3  ...        155010   2023-06-04
+3          4        Killers of the Flower Moon  ...           629   2023-06-04
+4          5              John Wick: Chapter 4  ...        188560   2023-06-04
+..       ...                               ...  ...           ...          ...
+95        96                     The Fabelmans  ...         90669   2023-06-04
+96        97                         Bama Rush  ...          1061   2023-06-04
+97        98              You Hurt My Feelings  ...          1219   2023-06-04
+98        99                         Nefarious  ...          4396   2023-06-04
+99       100  Once Upon a Time in... Hollywood  ...        778506   2023-06-04
+
+[100 rows x 6 columns]
+[2023-06-04T11:52:01.954+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=most_popular_movies, task_id=scrape_movies, execution_date=20230604T115159, start_date=20230604T115200, end_date=20230604T115201
+[2023-06-04T11:52:01.992+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-04T11:52:02.008+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check
