@@ -1,0 +1,26 @@
+[2023-06-04T08:49:02.932+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: top_250_movies.process_movies manual__2023-06-04T08:48:58.038204+00:00 [queued]>
+[2023-06-04T08:49:02.938+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: top_250_movies.process_movies manual__2023-06-04T08:48:58.038204+00:00 [queued]>
+[2023-06-04T08:49:02.938+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-04T08:49:02.947+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): process_movies> on 2023-06-04 08:48:58.038204+00:00
+[2023-06-04T08:49:02.952+0000] {standard_task_runner.py:57} INFO - Started process 1077 to run task
+[2023-06-04T08:49:02.955+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'top_250_movies', 'process_movies', 'manual__2023-06-04T08:48:58.038204+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/top_250_movies.py', '--cfg-path', '/tmp/tmpusbow_9h']
+[2023-06-04T08:49:02.956+0000] {standard_task_runner.py:85} INFO - Job 59: Subtask process_movies
+[2023-06-04T08:49:02.993+0000] {task_command.py:410} INFO - Running <TaskInstance: top_250_movies.process_movies manual__2023-06-04T08:48:58.038204+00:00 [running]> on host 7633a4fabdb3
+[2023-06-04T08:49:03.067+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='top_250_movies' AIRFLOW_CTX_TASK_ID='process_movies' AIRFLOW_CTX_EXECUTION_DATE='2023-06-04T08:48:58.038204+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-04T08:48:58.038204+00:00'
+[2023-06-04T08:49:03.075+0000] {python.py:183} INFO - Done. Returned value was:                    movie_name  movie_rating                       date
+0    The Shawshank Redemption           9.2 2023-06-04 08:49:03.071483
+1               The Godfather           9.2 2023-06-04 08:49:03.071483
+2             The Dark Knight           9.0 2023-06-04 08:49:03.071483
+3       The Godfather Part II           9.0 2023-06-04 08:49:03.071483
+4                12 Angry Men           9.0 2023-06-04 08:49:03.071483
+..                        ...           ...                        ...
+245             Life of Brian           8.0 2023-06-04 08:49:03.071483
+246            The Iron Giant           8.0 2023-06-04 08:49:03.071483
+247                  The Help           8.0 2023-06-04 08:49:03.071483
+248                   Aladdin           8.0 2023-06-04 08:49:03.071483
+249        Dances with Wolves           8.0 2023-06-04 08:49:03.071483
+
+[250 rows x 3 columns]
+[2023-06-04T08:49:03.137+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=top_250_movies, task_id=process_movies, execution_date=20230604T084858, start_date=20230604T084902, end_date=20230604T084903
+[2023-06-04T08:49:03.167+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-04T08:49:03.181+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

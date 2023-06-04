@@ -2,10 +2,15 @@
 # 2.0, and the BSD License. See the LICENSE file in the root of this repository
 # for complete details.
 
+import email.base64mime
+import email.generator
+import email.message
+import email.policy
+import io
 import typing
 
-from cryptography import utils
-from cryptography import x509
+from cryptography import utils, x509
+from cryptography.hazmat.bindings._rust import pkcs7 as rust_pkcs7
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import ec, rsa
 from cryptography.utils import _check_byteslike
@@ -23,15 +28,21 @@ def load_der_pkcs7_certificates(data: bytes) -> typing.List[x509.Certificate]:
     return backend.load_der_pkcs7_certificates(data)
 
 
-_ALLOWED_PKCS7_HASH_TYPES = typing.Union[
-    hashes.SHA1,
+def serialize_certificates(
+    certs: typing.List[x509.Certificate],
+    encoding: serialization.Encoding,
+) -> bytes:
+    return rust_pkcs7.serialize_certificates(certs, encoding)
+
+
+PKCS7HashTypes = typing.Union[
     hashes.SHA224,
     hashes.SHA256,
     hashes.SHA384,
     hashes.SHA512,
 ]
 
-_ALLOWED_PRIVATE_KEY_TYPES = typing.Union[
+PKCS7PrivateKeyTypes = typing.Union[
     rsa.RSAPrivateKey, ec.EllipticCurvePrivateKey
 ]
 
@@ -45,8 +56,19 @@ class PKCS7Options(utils.Enum):
     NoCerts = "Don't embed signer certificate"
 
 
-class PKCS7SignatureBuilder(object):
-    def __init__(self, data=None, signers=[], additional_certs=[]):
+class PKCS7SignatureBuilder:
+    def __init__(
+        self,
+        data: typing.Optional[bytes] = None,
+        signers: typing.List[
+            typing.Tuple[
+                x509.Certificate,
+                PKCS7PrivateKeyTypes,
+                PKCS7HashTypes,
+            ]
+        ] = [],
+        additional_certs: typing.List[x509.Certificate] = [],
+    ):
         self._data = data
         self._signers = signers
         self._additional_certs = additional_certs
@@ -61,13 +83,12 @@ class PKCS7SignatureBuilder(object):
     def add_signer(
         self,
         certificate: x509.Certificate,
-        private_key: _ALLOWED_PRIVATE_KEY_TYPES,
-        hash_algorithm: _ALLOWED_PKCS7_HASH_TYPES,
+        private_key: PKCS7PrivateKeyTypes,
+        hash_algorithm: PKCS7HashTypes,
     ) -> "PKCS7SignatureBuilder":
         if not isinstance(
             hash_algorithm,
             (
-                hashes.SHA1,
                 hashes.SHA224,
                 hashes.SHA256,
                 hashes.SHA384,
@@ -75,7 +96,7 @@ class PKCS7SignatureBuilder(object):
             ),
         ):
             raise TypeError(
-                "hash_algorithm must be one of hashes.SHA1, SHA224, "
+                "hash_algorithm must be one of hashes.SHA224, "
                 "SHA256, SHA384, or SHA512"
             )
         if not isinstance(certificate, x509.Certificate):
@@ -153,8 +174,60 @@ class PKCS7SignatureBuilder(object):
                 "both values."
             )
 
-        from cryptography.hazmat.backends.openssl.backend import (
-            backend as ossl,
-        )
+        return rust_pkcs7.sign_and_serialize(self, encoding, options)
 
-        return ossl.pkcs7_sign(self, encoding, options)
+
+def _smime_encode(
+    data: bytes, signature: bytes, micalg: str, text_mode: bool
+) -> bytes:
+    # This function works pretty hard to replicate what OpenSSL does
+    # precisely. For good and for ill.
+
+    m = email.message.Message()
+    m.add_header("MIME-Version", "1.0")
+    m.add_header(
+        "Content-Type",
+        "multipart/signed",
+        protocol="application/x-pkcs7-signature",
+        micalg=micalg,
+    )
+
+    m.preamble = "This is an S/MIME signed message\n"
+
+    msg_part = OpenSSLMimePart()
+    msg_part.set_payload(data)
+    if text_mode:
+        msg_part.add_header("Content-Type", "text/plain")
+    m.attach(msg_part)
+
+    sig_part = email.message.MIMEPart()
+    sig_part.add_header(
+        "Content-Type", "application/x-pkcs7-signature", name="smime.p7s"
+    )
+    sig_part.add_header("Content-Transfer-Encoding", "base64")
+    sig_part.add_header(
+        "Content-Disposition", "attachment", filename="smime.p7s"
+    )
+    sig_part.set_payload(
+        email.base64mime.body_encode(signature, maxlinelen=65)
+    )
+    del sig_part["MIME-Version"]
+    m.attach(sig_part)
+
+    fp = io.BytesIO()
+    g = email.generator.BytesGenerator(
+        fp,
+        maxheaderlen=0,
+        mangle_from_=False,
+        policy=m.policy.clone(linesep="\r\n"),
+    )
+    g.flatten(m)
+    return fp.getvalue()
+
+
+class OpenSSLMimePart(email.message.MIMEPart):
+    # A MIMEPart subclass that replicates OpenSSL's behavior of not including
+    # a newline if there are no headers.
+    def _write_headers(self, generator) -> None:
+        if list(self.raw_items()):
+            generator._write_headers(self)

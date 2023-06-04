@@ -6,8 +6,7 @@
 import abc
 import typing
 
-from cryptography.hazmat.primitives import serialization
-
+from cryptography.hazmat.primitives import _serialization
 
 _MIN_MODULUS_SIZE = 512
 
@@ -20,7 +19,7 @@ def generate_parameters(
     return ossl.generate_dh_parameters(generator, key_size)
 
 
-class DHParameterNumbers(object):
+class DHParameterNumbers:
     def __init__(self, p: int, g: int, q: typing.Optional[int] = None) -> None:
         if not isinstance(p, int) or not isinstance(g, int):
             raise TypeError("p and g must be integers")
@@ -32,23 +31,20 @@ class DHParameterNumbers(object):
 
         if p.bit_length() < _MIN_MODULUS_SIZE:
             raise ValueError(
-                "p (modulus) must be at least {}-bit".format(_MIN_MODULUS_SIZE)
+                f"p (modulus) must be at least {_MIN_MODULUS_SIZE}-bit"
             )
 
         self._p = p
         self._g = g
         self._q = q
 
-    def __eq__(self, other):
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, DHParameterNumbers):
             return NotImplemented
 
         return (
             self._p == other._p and self._g == other._g and self._q == other._q
         )
-
-    def __ne__(self, other):
-        return not self == other
 
     def parameters(self, backend: typing.Any = None) -> "DHParameters":
         from cryptography.hazmat.backends.openssl.backend import (
@@ -57,12 +53,20 @@ class DHParameterNumbers(object):
 
         return ossl.load_dh_parameter_numbers(self)
 
-    p = property(lambda self: self._p)
-    g = property(lambda self: self._g)
-    q = property(lambda self: self._q)
+    @property
+    def p(self) -> int:
+        return self._p
+
+    @property
+    def g(self) -> int:
+        return self._g
+
+    @property
+    def q(self) -> typing.Optional[int]:
+        return self._q
 
 
-class DHPublicNumbers(object):
+class DHPublicNumbers:
     def __init__(self, y: int, parameter_numbers: DHParameterNumbers) -> None:
         if not isinstance(y, int):
             raise TypeError("y must be an integer.")
@@ -75,7 +79,7 @@ class DHPublicNumbers(object):
         self._y = y
         self._parameter_numbers = parameter_numbers
 
-    def __eq__(self, other):
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, DHPublicNumbers):
             return NotImplemented
 
@@ -84,9 +88,6 @@ class DHPublicNumbers(object):
             and self._parameter_numbers == other._parameter_numbers
         )
 
-    def __ne__(self, other):
-        return not self == other
-
     def public_key(self, backend: typing.Any = None) -> "DHPublicKey":
         from cryptography.hazmat.backends.openssl.backend import (
             backend as ossl,
@@ -94,11 +95,16 @@ class DHPublicNumbers(object):
 
         return ossl.load_dh_public_numbers(self)
 
-    y = property(lambda self: self._y)
-    parameter_numbers = property(lambda self: self._parameter_numbers)
+    @property
+    def y(self) -> int:
+        return self._y
+
+    @property
+    def parameter_numbers(self) -> DHParameterNumbers:
+        return self._parameter_numbers
 
 
-class DHPrivateNumbers(object):
+class DHPrivateNumbers:
     def __init__(self, x: int, public_numbers: DHPublicNumbers) -> None:
         if not isinstance(x, int):
             raise TypeError("x must be an integer.")
@@ -111,7 +117,7 @@ class DHPrivateNumbers(object):
         self._x = x
         self._public_numbers = public_numbers
 
-    def __eq__(self, other):
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, DHPrivateNumbers):
             return NotImplemented
 
@@ -120,9 +126,6 @@ class DHPrivateNumbers(object):
             and self._public_numbers == other._public_numbers
         )
 
-    def __ne__(self, other):
-        return not self == other
-
     def private_key(self, backend: typing.Any = None) -> "DHPrivateKey":
         from cryptography.hazmat.backends.openssl.backend import (
             backend as ossl,
@@ -130,8 +133,13 @@ class DHPrivateNumbers(object):
 
         return ossl.load_dh_private_numbers(self)
 
-    public_numbers = property(lambda self: self._public_numbers)
-    x = property(lambda self: self._x)
+    @property
+    def public_numbers(self) -> DHPublicNumbers:
+        return self._public_numbers
+
+    @property
+    def x(self) -> int:
+        return self._x
 
 
 class DHParameters(metaclass=abc.ABCMeta):
@@ -144,8 +152,8 @@ class DHParameters(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def parameter_bytes(
         self,
-        encoding: "serialization.Encoding",
-        format: "serialization.ParameterFormat",
+        encoding: _serialization.Encoding,
+        format: _serialization.ParameterFormat,
     ) -> bytes:
         """
         Returns the parameters serialized as bytes.
@@ -162,7 +170,8 @@ DHParametersWithSerialization = DHParameters
 
 
 class DHPublicKey(metaclass=abc.ABCMeta):
-    @abc.abstractproperty
+    @property
+    @abc.abstractmethod
     def key_size(self) -> int:
         """
         The bit length of the prime modulus.
@@ -183,8 +192,8 @@ class DHPublicKey(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def public_bytes(
         self,
-        encoding: "serialization.Encoding",
-        format: "serialization.PublicFormat",
+        encoding: _serialization.Encoding,
+        format: _serialization.PublicFormat,
     ) -> bytes:
         """
         Returns the key serialized as bytes.
@@ -195,7 +204,8 @@ DHPublicKeyWithSerialization = DHPublicKey
 
 
 class DHPrivateKey(metaclass=abc.ABCMeta):
-    @abc.abstractproperty
+    @property
+    @abc.abstractmethod
     def key_size(self) -> int:
         """
         The bit length of the prime modulus.
@@ -229,9 +239,9 @@ class DHPrivateKey(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def private_bytes(
         self,
-        encoding: "serialization.Encoding",
-        format: "serialization.PrivateFormat",
-        encryption_algorithm: "serialization.KeySerializationEncryption",
+        encoding: _serialization.Encoding,
+        format: _serialization.PrivateFormat,
+        encryption_algorithm: _serialization.KeySerializationEncryption,
     ) -> bytes:
         """
         Returns the key serialized as bytes.

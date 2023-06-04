@@ -1,0 +1,475 @@
+[2023-06-04T09:18:13.598+0000] {processor.py:157} INFO - Started process (PID=16125) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:18:13.598+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:18:13.599+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:18:13.599+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:18:14.223+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:18:14.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.637 seconds
+[2023-06-04T09:18:44.922+0000] {processor.py:157} INFO - Started process (PID=16254) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:18:44.923+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:18:44.924+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:18:44.924+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:18:45.516+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:18:45.525+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.607 seconds
+[2023-06-04T09:19:16.062+0000] {processor.py:157} INFO - Started process (PID=16383) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:16.063+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:19:16.064+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:19:16.063+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:16.687+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:16.695+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.636 seconds
+[2023-06-04T09:19:46.809+0000] {processor.py:157} INFO - Started process (PID=16512) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:46.810+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:19:46.810+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:19:46.810+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:47.350+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:47.359+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.552 seconds
+[2023-06-04T09:19:54.639+0000] {processor.py:157} INFO - Started process (PID=16561) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:54.640+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:19:54.641+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:19:54.640+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:55.201+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:19:55.209+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.573 seconds
+[2023-06-04T09:20:25.361+0000] {processor.py:157} INFO - Started process (PID=16691) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:20:25.362+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:20:25.363+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:20:25.362+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:20:25.989+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:20:26.001+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.643 seconds
+[2023-06-04T09:20:56.493+0000] {processor.py:157} INFO - Started process (PID=16820) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:20:56.493+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:20:56.494+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:20:56.494+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:20:57.041+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:20:57.050+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.559 seconds
+[2023-06-04T09:21:27.733+0000] {processor.py:157} INFO - Started process (PID=16950) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:21:27.735+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:21:27.735+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:21:27.735+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:21:28.259+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:21:28.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.536 seconds
+[2023-06-04T09:21:49.486+0000] {processor.py:157} INFO - Started process (PID=17050) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:21:49.486+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:21:49.487+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:21:49.487+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:21:50.037+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:21:50.046+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.563 seconds
+[2023-06-04T09:22:21.048+0000] {processor.py:157} INFO - Started process (PID=17179) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:22:21.050+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:22:21.050+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:22:21.050+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:22:21.652+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:22:21.661+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.615 seconds
+[2023-06-04T09:22:52.417+0000] {processor.py:157} INFO - Started process (PID=17309) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:22:52.418+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:22:52.419+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:22:52.418+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:22:53.006+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:22:53.015+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.600 seconds
+[2023-06-04T09:23:23.221+0000] {processor.py:157} INFO - Started process (PID=17440) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:23:23.222+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:23:23.222+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:23:23.222+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:23:23.805+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:23:23.813+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.594 seconds
+[2023-06-04T09:23:54.604+0000] {processor.py:157} INFO - Started process (PID=17569) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:23:54.605+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:23:54.605+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:23:54.605+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:23:55.280+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:23:55.289+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.688 seconds
+[2023-06-04T09:24:25.603+0000] {processor.py:157} INFO - Started process (PID=17698) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:24:25.604+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:24:25.604+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:24:25.604+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:24:26.240+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:24:26.248+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.648 seconds
+[2023-06-04T09:24:56.596+0000] {processor.py:157} INFO - Started process (PID=17828) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:24:56.597+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:24:56.598+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:24:56.597+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:24:57.195+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:24:57.206+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.613 seconds
+[2023-06-04T09:25:19.767+0000] {processor.py:157} INFO - Started process (PID=17877) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:25:19.767+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:25:19.768+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:25:19.768+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:25:20.372+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:25:20.383+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.619 seconds
+[2023-06-04T09:25:51.059+0000] {processor.py:157} INFO - Started process (PID=18006) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:25:51.060+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:25:51.061+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:25:51.060+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:25:51.638+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:25:51.649+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.593 seconds
+[2023-06-04T09:26:21.763+0000] {processor.py:157} INFO - Started process (PID=18175) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:26:21.764+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:26:21.764+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:26:21.764+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:26:22.340+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:26:22.348+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.587 seconds
+[2023-06-04T09:26:52.386+0000] {processor.py:157} INFO - Started process (PID=18312) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:26:52.388+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:26:52.388+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:26:52.388+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:26:53.003+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:26:53.015+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.631 seconds
+[2023-06-04T09:27:23.601+0000] {processor.py:157} INFO - Started process (PID=18443) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:27:23.603+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:27:23.603+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:27:23.603+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:27:24.137+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:27:24.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.547 seconds
+[2023-06-04T09:27:54.823+0000] {processor.py:157} INFO - Started process (PID=18573) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:27:54.824+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:27:54.825+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:27:54.825+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:27:55.405+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:27:55.414+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.593 seconds
+[2023-06-04T09:28:25.727+0000] {processor.py:157} INFO - Started process (PID=18708) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:28:25.728+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:28:25.729+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:28:25.729+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:28:26.308+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:28:26.317+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.593 seconds
+[2023-06-04T09:28:56.544+0000] {processor.py:157} INFO - Started process (PID=18832) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:28:56.545+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:28:56.546+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:28:56.546+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:28:57.102+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:28:57.111+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.570 seconds
+[2023-06-04T09:29:27.163+0000] {processor.py:157} INFO - Started process (PID=18966) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:29:27.164+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:29:27.165+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:29:27.165+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:29:27.747+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:29:27.754+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.594 seconds
+[2023-06-04T09:29:57.781+0000] {processor.py:157} INFO - Started process (PID=19099) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:29:57.781+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:29:57.782+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:29:57.782+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:29:58.329+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:29:58.339+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.561 seconds
+[2023-06-04T09:30:28.755+0000] {processor.py:157} INFO - Started process (PID=19234) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:30:28.755+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:30:28.756+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:30:28.756+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:30:29.332+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:30:29.341+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.589 seconds
+[2023-06-04T09:30:59.380+0000] {processor.py:157} INFO - Started process (PID=19369) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:30:59.380+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:30:59.381+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:30:59.381+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:30:59.899+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:30:59.908+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.530 seconds
+[2023-06-04T09:31:30.554+0000] {processor.py:157} INFO - Started process (PID=19498) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:31:30.555+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:31:30.555+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:31:30.555+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:31:31.106+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:31:31.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.563 seconds
+[2023-06-04T09:32:01.186+0000] {processor.py:157} INFO - Started process (PID=19634) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:32:01.186+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:32:01.187+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:32:01.187+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:32:01.722+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:32:01.729+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.545 seconds
+[2023-06-04T09:32:32.733+0000] {processor.py:157} INFO - Started process (PID=19771) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:32:32.734+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:32:32.734+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:32:32.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:32:33.248+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:32:33.257+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.526 seconds
+[2023-06-04T09:33:04.146+0000] {processor.py:157} INFO - Started process (PID=19900) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:33:04.147+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:33:04.147+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:33:04.147+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:33:04.676+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:33:04.684+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.540 seconds
+[2023-06-04T09:33:35.444+0000] {processor.py:157} INFO - Started process (PID=20030) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:33:35.445+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:33:35.446+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:33:35.446+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:33:35.990+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:33:35.999+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.556 seconds
+[2023-06-04T09:34:06.576+0000] {processor.py:157} INFO - Started process (PID=20159) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:34:06.578+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:34:06.578+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:34:06.578+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:34:07.114+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:34:07.125+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.552 seconds
+[2023-06-04T09:34:37.295+0000] {processor.py:157} INFO - Started process (PID=20290) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:34:37.295+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:34:37.296+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:34:37.296+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:34:37.875+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:34:37.887+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.595 seconds
+[2023-06-04T09:35:08.575+0000] {processor.py:157} INFO - Started process (PID=20420) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:35:08.576+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:35:08.576+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:35:08.576+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:35:09.118+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:35:09.127+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.555 seconds
+[2023-06-04T09:35:39.943+0000] {processor.py:157} INFO - Started process (PID=20550) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:35:39.944+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:35:39.944+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:35:39.944+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:35:40.530+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:35:40.537+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.596 seconds
+[2023-06-04T09:36:11.444+0000] {processor.py:157} INFO - Started process (PID=20680) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:36:11.445+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:36:11.446+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:36:11.446+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:36:11.962+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:36:11.970+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.529 seconds
+[2023-06-04T09:36:42.609+0000] {processor.py:157} INFO - Started process (PID=20810) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:36:42.610+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:36:42.611+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:36:42.611+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:36:43.123+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:36:43.131+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.524 seconds
+[2023-06-04T09:37:13.221+0000] {processor.py:157} INFO - Started process (PID=20940) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:37:13.222+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:37:13.223+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:37:13.223+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:37:13.755+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:37:13.763+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.544 seconds
+[2023-06-04T09:37:44.390+0000] {processor.py:157} INFO - Started process (PID=21070) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:37:44.390+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:37:44.391+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:37:44.391+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:37:44.903+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:37:44.911+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.524 seconds
+[2023-06-04T09:38:15.446+0000] {processor.py:157} INFO - Started process (PID=21200) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:38:15.447+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:38:15.447+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:38:15.447+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:38:16.038+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:38:16.046+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.604 seconds
+[2023-06-04T09:38:46.302+0000] {processor.py:157} INFO - Started process (PID=21330) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:38:46.302+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:38:46.303+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:38:46.303+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:38:46.871+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:38:46.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.580 seconds
+[2023-06-04T09:39:17.567+0000] {processor.py:157} INFO - Started process (PID=21459) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:39:17.568+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:39:17.569+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:39:17.568+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:39:18.087+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:39:18.096+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.531 seconds
+[2023-06-04T09:39:48.466+0000] {processor.py:157} INFO - Started process (PID=21589) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:39:48.466+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:39:48.467+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:39:48.467+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:39:48.984+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:39:48.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.529 seconds
+[2023-06-04T09:40:19.164+0000] {processor.py:157} INFO - Started process (PID=21718) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:40:19.165+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:40:19.166+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:40:19.166+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:40:19.693+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:40:19.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.539 seconds
+[2023-06-04T09:40:50.217+0000] {processor.py:157} INFO - Started process (PID=21848) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:40:50.218+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:40:50.218+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:40:50.218+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:40:50.740+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:40:50.749+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.534 seconds
+[2023-06-04T09:41:21.058+0000] {processor.py:157} INFO - Started process (PID=21977) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:41:21.058+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:41:21.059+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:41:21.059+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:41:21.591+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:41:21.599+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.543 seconds
+[2023-06-04T09:41:52.512+0000] {processor.py:157} INFO - Started process (PID=22106) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:41:52.513+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:41:52.514+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:41:52.514+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:41:53.032+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:41:53.041+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.530 seconds
+[2023-06-04T09:42:24.054+0000] {processor.py:157} INFO - Started process (PID=22242) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:42:24.054+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:42:24.055+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:42:24.055+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:42:24.588+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:42:24.597+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.547 seconds
+[2023-06-04T09:42:55.400+0000] {processor.py:157} INFO - Started process (PID=22371) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:42:55.402+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:42:55.403+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:42:55.402+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:42:55.943+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:42:55.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.553 seconds
+[2023-06-04T09:43:26.979+0000] {processor.py:157} INFO - Started process (PID=22500) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:43:26.980+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:43:26.981+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:43:26.980+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:43:27.520+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:43:27.527+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.551 seconds
+[2023-06-04T09:43:58.238+0000] {processor.py:157} INFO - Started process (PID=22629) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:43:58.238+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:43:58.239+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:43:58.239+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:43:58.761+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:43:58.768+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.533 seconds
+[2023-06-04T09:44:29.238+0000] {processor.py:157} INFO - Started process (PID=22758) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:44:29.239+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:44:29.240+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:44:29.240+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:44:29.759+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:44:29.768+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.532 seconds
+[2023-06-04T09:44:59.904+0000] {processor.py:157} INFO - Started process (PID=22887) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:44:59.905+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:44:59.905+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:44:59.905+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:45:00.427+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:45:00.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.534 seconds
+[2023-06-04T09:45:31.305+0000] {processor.py:157} INFO - Started process (PID=23016) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:45:31.306+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:45:31.306+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:45:31.306+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:45:31.826+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:45:31.834+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.531 seconds
+[2023-06-04T09:46:01.861+0000] {processor.py:157} INFO - Started process (PID=23146) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:46:01.861+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:46:01.862+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:46:01.862+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:46:02.402+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:46:02.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.552 seconds
+[2023-06-04T09:46:32.435+0000] {processor.py:157} INFO - Started process (PID=23276) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:46:32.435+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:46:32.436+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:46:32.436+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:46:32.985+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:46:32.994+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.561 seconds
+[2023-06-04T09:47:03.526+0000] {processor.py:157} INFO - Started process (PID=23406) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:47:03.527+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:47:03.527+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:47:03.527+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:47:04.054+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:47:04.062+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.539 seconds
+[2023-06-04T09:47:34.215+0000] {processor.py:157} INFO - Started process (PID=23536) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:47:34.216+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:47:34.216+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:47:34.216+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:47:34.732+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:47:34.740+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.526 seconds
+[2023-06-04T09:48:05.380+0000] {processor.py:157} INFO - Started process (PID=23666) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:48:05.381+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:48:05.381+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:48:05.381+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:48:05.900+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:48:05.908+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.530 seconds
+[2023-06-04T09:48:36.382+0000] {processor.py:157} INFO - Started process (PID=23795) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:48:36.382+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:48:36.383+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:48:36.383+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:48:36.904+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:48:36.912+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.533 seconds
+[2023-06-04T09:49:07.494+0000] {processor.py:157} INFO - Started process (PID=23925) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:49:07.495+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:49:07.496+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:49:07.496+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:49:08.001+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:49:08.009+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.517 seconds
+[2023-06-04T09:49:39.044+0000] {processor.py:157} INFO - Started process (PID=24055) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:49:39.045+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:49:39.045+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:49:39.045+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:49:39.579+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:49:39.587+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.546 seconds
+[2023-06-04T09:50:10.042+0000] {processor.py:157} INFO - Started process (PID=24185) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:50:10.042+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:50:10.043+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:50:10.043+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:50:10.564+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:50:10.573+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.533 seconds
+[2023-06-04T09:50:40.684+0000] {processor.py:157} INFO - Started process (PID=24315) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:50:40.685+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:50:40.686+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:50:40.686+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:50:41.211+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:50:41.218+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.537 seconds
+[2023-06-04T09:51:12.134+0000] {processor.py:157} INFO - Started process (PID=24445) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:51:12.134+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:51:12.135+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:51:12.134+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:51:12.673+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:51:12.682+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.550 seconds
+[2023-06-04T09:51:43.599+0000] {processor.py:157} INFO - Started process (PID=24575) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:51:43.600+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:51:43.600+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:51:43.600+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:51:44.118+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:51:44.125+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.529 seconds
+[2023-06-04T09:52:15.074+0000] {processor.py:157} INFO - Started process (PID=24705) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:52:15.075+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:52:15.076+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:52:15.076+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:52:15.629+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:52:15.637+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.566 seconds
+[2023-06-04T09:52:45.988+0000] {processor.py:157} INFO - Started process (PID=24835) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:52:45.989+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:52:45.989+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:52:45.989+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:52:46.519+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:52:46.528+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.542 seconds
+[2023-06-04T09:53:16.755+0000] {processor.py:157} INFO - Started process (PID=24964) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:53:16.756+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:53:16.757+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:53:16.757+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:53:17.245+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:53:17.254+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.501 seconds
+[2023-06-04T09:53:47.332+0000] {processor.py:157} INFO - Started process (PID=25093) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:53:47.333+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:53:47.333+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:53:47.333+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:53:47.864+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:53:47.873+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.543 seconds
+[2023-06-04T09:54:18.378+0000] {processor.py:157} INFO - Started process (PID=25222) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:54:18.380+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:54:18.380+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:54:18.380+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:54:18.865+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:54:18.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.499 seconds
+[2023-06-04T09:54:49.061+0000] {processor.py:157} INFO - Started process (PID=25352) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:54:49.062+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:54:49.062+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:54:49.062+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:54:49.552+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:54:49.560+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.502 seconds
+[2023-06-04T09:55:19.692+0000] {processor.py:157} INFO - Started process (PID=25481) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:55:19.693+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:55:19.694+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:55:19.694+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:55:20.179+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:55:20.186+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.497 seconds
+[2023-06-04T09:55:50.565+0000] {processor.py:157} INFO - Started process (PID=25610) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:55:50.566+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:55:50.566+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:55:50.566+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:55:51.071+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:55:51.080+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.517 seconds
+[2023-06-04T09:56:21.304+0000] {processor.py:157} INFO - Started process (PID=25740) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:56:21.306+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:56:21.306+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:56:21.306+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:56:21.792+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:56:21.803+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.500 seconds
+[2023-06-04T09:56:52.001+0000] {processor.py:157} INFO - Started process (PID=25870) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:56:52.002+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:56:52.002+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:56:52.002+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:56:52.497+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:56:52.506+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.507 seconds
+[2023-06-04T09:57:22.717+0000] {processor.py:157} INFO - Started process (PID=25999) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:57:22.717+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:57:22.718+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:57:22.718+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:57:23.206+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:57:23.214+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.500 seconds
+[2023-06-04T09:57:53.451+0000] {processor.py:157} INFO - Started process (PID=26129) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:57:53.453+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:57:53.453+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:57:53.453+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:57:53.944+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:57:53.952+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.503 seconds
+[2023-06-04T09:58:24.277+0000] {processor.py:157} INFO - Started process (PID=26259) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:58:24.277+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:58:24.278+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:58:24.278+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:58:24.801+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:58:24.809+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.534 seconds
+[2023-06-04T09:58:55.459+0000] {processor.py:157} INFO - Started process (PID=26389) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:58:55.461+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:58:55.461+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:58:55.461+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:58:55.969+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:58:55.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.520 seconds
+[2023-06-04T09:59:26.450+0000] {processor.py:157} INFO - Started process (PID=26518) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:59:26.451+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:59:26.451+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:59:26.451+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:59:26.947+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:59:27.014+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.566 seconds
+[2023-06-04T09:59:57.295+0000] {processor.py:157} INFO - Started process (PID=26655) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:59:57.296+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T09:59:57.297+0000] {logging_mixin.py:149} INFO - [2023-06-04T09:59:57.297+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:59:57.797+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T09:59:57.805+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.512 seconds
+[2023-06-04T10:33:10.163+0000] {processor.py:157} INFO - Started process (PID=26829) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:33:10.164+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:33:10.164+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:33:10.164+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:33:10.794+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:33:10.803+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.642 seconds
+[2023-06-04T10:33:40.943+0000] {processor.py:157} INFO - Started process (PID=26958) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:33:40.944+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:33:40.945+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:33:40.945+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:33:41.528+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:33:41.536+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.595 seconds
+[2023-06-04T10:34:11.846+0000] {processor.py:157} INFO - Started process (PID=27082) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:34:11.847+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:34:11.847+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:34:11.847+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:34:12.494+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:34:12.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.663 seconds
+[2023-06-04T10:34:42.874+0000] {processor.py:157} INFO - Started process (PID=27212) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:34:42.875+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:34:42.876+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:34:42.876+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:34:43.561+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:34:43.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.701 seconds
+[2023-06-04T10:35:13.792+0000] {processor.py:157} INFO - Started process (PID=27342) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:35:13.793+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:35:13.793+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:35:13.793+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:35:14.428+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:35:14.437+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.648 seconds
+[2023-06-04T10:35:44.845+0000] {processor.py:157} INFO - Started process (PID=27471) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:35:44.846+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:35:44.847+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:35:44.846+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:35:45.395+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:35:45.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.611 seconds
+[2023-06-04T10:36:15.886+0000] {processor.py:157} INFO - Started process (PID=27600) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:36:15.887+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:36:15.888+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:36:15.888+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:36:16.454+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:36:16.463+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.580 seconds
+[2023-06-04T10:36:46.537+0000] {processor.py:157} INFO - Started process (PID=27728) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:36:46.538+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:36:46.539+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:36:46.538+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:36:47.126+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:36:47.134+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.599 seconds
+[2023-06-04T10:37:17.723+0000] {processor.py:157} INFO - Started process (PID=27859) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:37:17.724+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:37:17.724+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:37:17.724+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:37:18.269+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:37:18.278+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.557 seconds
+[2023-06-04T10:37:49.122+0000] {processor.py:157} INFO - Started process (PID=27989) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:37:49.123+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:37:49.124+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:37:49.124+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:37:49.696+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:37:49.704+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.585 seconds
+[2023-06-04T10:38:20.190+0000] {processor.py:157} INFO - Started process (PID=28118) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:38:20.191+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:38:20.191+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:20.191+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:38:20.798+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:38:20.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.620 seconds
+[2023-06-04T10:38:51.265+0000] {processor.py:157} INFO - Started process (PID=28247) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:38:51.266+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2023-06-04T10:38:51.267+0000] {logging_mixin.py:149} INFO - [2023-06-04T10:38:51.267+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:38:51.862+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2023-06-04T10:38:51.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 0.616 seconds

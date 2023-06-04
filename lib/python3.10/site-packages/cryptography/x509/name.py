@@ -2,17 +2,20 @@
 # 2.0, and the BSD License. See the LICENSE file in the root of this repository
 # for complete details.
 
+import binascii
+import re
+import sys
 import typing
 import warnings
 
 from cryptography import utils
-from cryptography.hazmat.bindings._rust import (
-    x509 as rust_x509,
-)
+from cryptography.hazmat.bindings._rust import x509 as rust_x509
 from cryptography.x509.oid import NameOID, ObjectIdentifier
 
 
 class _ASN1Type(utils.Enum):
+    BitString = 3
+    OctetString = 4
     UTF8String = 12
     NumericString = 18
     PrintableString = 19
@@ -26,8 +29,7 @@ class _ASN1Type(utils.Enum):
 
 
 _ASN1_TYPE_TO_ENUM = {i.value: i for i in _ASN1Type}
-_SENTINEL = object()
-_NAMEOID_DEFAULT_TYPE = {
+_NAMEOID_DEFAULT_TYPE: typing.Dict[ObjectIdentifier, _ASN1Type] = {
     NameOID.COUNTRY_NAME: _ASN1Type.PrintableString,
     NameOID.JURISDICTION_COUNTRY_NAME: _ASN1Type.PrintableString,
     NameOID.SERIAL_NUMBER: _ASN1Type.PrintableString,
@@ -38,6 +40,7 @@ _NAMEOID_DEFAULT_TYPE = {
 
 # Type alias
 _OidNameMap = typing.Mapping[ObjectIdentifier, str]
+_NameOidMap = typing.Mapping[str, ObjectIdentifier]
 
 #: Short attribute names from RFC 4514:
 #: https://tools.ietf.org/html/rfc4514#page-7
@@ -52,13 +55,19 @@ _NAMEOID_TO_NAME: _OidNameMap = {
     NameOID.DOMAIN_COMPONENT: "DC",
     NameOID.USER_ID: "UID",
 }
+_NAME_TO_NAMEOID = {v: k for k, v in _NAMEOID_TO_NAME.items()}
 
 
-def _escape_dn_value(val: str) -> str:
+def _escape_dn_value(val: typing.Union[str, bytes]) -> str:
     """Escape special characters in RFC4514 Distinguished Name value."""
 
     if not val:
         return ""
+
+    # RFC 4514 Section 2.4 defines the value as being the # (U+0023) character
+    # followed by the hexadecimal encoding of the octets.
+    if isinstance(val, bytes):
+        return "#" + binascii.hexlify(val).decode("utf8")
 
     # See https://tools.ietf.org/html/rfc4514#section-2.4
     val = val.replace("\\", "\\\\")
@@ -78,27 +87,54 @@ def _escape_dn_value(val: str) -> str:
     return val
 
 
-class NameAttribute(object):
+def _unescape_dn_value(val: str) -> str:
+    if not val:
+        return ""
+
+    # See https://tools.ietf.org/html/rfc4514#section-3
+
+    # special = escaped / SPACE / SHARP / EQUALS
+    # escaped = DQUOTE / PLUS / COMMA / SEMI / LANGLE / RANGLE
+    def sub(m):
+        val = m.group(1)
+        # Regular escape
+        if len(val) == 1:
+            return val
+        # Hex-value scape
+        return chr(int(val, 16))
+
+    return _RFC4514NameParser._PAIR_RE.sub(sub, val)
+
+
+class NameAttribute:
     def __init__(
         self,
         oid: ObjectIdentifier,
-        value: str,
-        _type=_SENTINEL,
+        value: typing.Union[str, bytes],
+        _type: typing.Optional[_ASN1Type] = None,
         *,
-        _validate=True,
+        _validate: bool = True,
     ) -> None:
         if not isinstance(oid, ObjectIdentifier):
             raise TypeError(
                 "oid argument must be an ObjectIdentifier instance."
             )
-
-        if not isinstance(value, str):
-            raise TypeError("value argument must be a str.")
+        if _type == _ASN1Type.BitString:
+            if oid != NameOID.X500_UNIQUE_IDENTIFIER:
+                raise TypeError(
+                    "oid must be X500_UNIQUE_IDENTIFIER for BitString type."
+                )
+            if not isinstance(value, bytes):
+                raise TypeError("value must be bytes for BitString")
+        else:
+            if not isinstance(value, str):
+                raise TypeError("value argument must be a str")
 
         if (
             oid == NameOID.COUNTRY_NAME
             or oid == NameOID.JURISDICTION_COUNTRY_NAME
         ):
+            assert isinstance(value, str)
             c_len = len(value.encode("utf8"))
             if c_len != 2 and _validate is True:
                 raise ValueError(
@@ -117,7 +153,7 @@ class NameAttribute(object):
         # alternate types. This means when we see the sentinel value we need
         # to look up whether the OID has a non-UTF8 type. If it does, set it
         # to that. Otherwise, UTF8!
-        if _type == _SENTINEL:
+        if _type is None:
             _type = _NAMEOID_DEFAULT_TYPE.get(oid, _ASN1Type.UTF8String)
 
         if not isinstance(_type, _ASN1Type):
@@ -132,7 +168,7 @@ class NameAttribute(object):
         return self._oid
 
     @property
-    def value(self) -> str:
+    def value(self) -> typing.Union[str, bytes]:
         return self._value
 
     @property
@@ -158,16 +194,13 @@ class NameAttribute(object):
         if attr_name is None:
             attr_name = self.rfc4514_attribute_name
 
-        return "%s=%s" % (attr_name, _escape_dn_value(self.value))
+        return f"{attr_name}={_escape_dn_value(self.value)}"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, NameAttribute):
             return NotImplemented
 
         return self.oid == other.oid and self.value == other.value
-
-    def __ne__(self, other: object) -> bool:
-        return not self == other
 
     def __hash__(self) -> int:
         return hash((self.oid, self.value))
@@ -176,7 +209,7 @@ class NameAttribute(object):
         return "<NameAttribute(oid={0.oid}, value={0.value!r})>".format(self)
 
 
-class RelativeDistinguishedName(object):
+class RelativeDistinguishedName:
     def __init__(self, attributes: typing.Iterable[NameAttribute]):
         attributes = list(attributes)
         if not attributes:
@@ -216,9 +249,6 @@ class RelativeDistinguishedName(object):
 
         return self._attribute_set == other._attribute_set
 
-    def __ne__(self, other: object) -> bool:
-        return not self == other
-
     def __hash__(self) -> int:
         return hash(self._attribute_set)
 
@@ -229,10 +259,10 @@ class RelativeDistinguishedName(object):
         return len(self._attributes)
 
     def __repr__(self) -> str:
-        return "<RelativeDistinguishedName({})>".format(self.rfc4514_string())
+        return f"<RelativeDistinguishedName({self.rfc4514_string()})>"
 
 
-class Name(object):
+class Name:
     @typing.overload
     def __init__(self, attributes: typing.Iterable[NameAttribute]) -> None:
         ...
@@ -264,6 +294,14 @@ class Name(object):
                 "attributes must be a list of NameAttribute"
                 " or a list RelativeDistinguishedName"
             )
+
+    @classmethod
+    def from_rfc4514_string(
+        cls,
+        data: str,
+        attr_name_overrides: typing.Optional[_NameOidMap] = None,
+    ) -> "Name":
+        return _RFC4514NameParser(data, attr_name_overrides or {}).parse()
 
     def rfc4514_string(
         self, attr_name_overrides: typing.Optional[_OidNameMap] = None
@@ -301,9 +339,6 @@ class Name(object):
 
         return self._attributes == other._attributes
 
-    def __ne__(self, other: object) -> bool:
-        return not self == other
-
     def __hash__(self) -> int:
         # TODO: this is relatively expensive, if this looks like a bottleneck
         # for you, consider optimizing!
@@ -319,4 +354,107 @@ class Name(object):
 
     def __repr__(self) -> str:
         rdns = ",".join(attr.rfc4514_string() for attr in self._attributes)
-        return "<Name({})>".format(rdns)
+        return f"<Name({rdns})>"
+
+
+class _RFC4514NameParser:
+    _OID_RE = re.compile(r"(0|([1-9]\d*))(\.(0|([1-9]\d*)))+")
+    _DESCR_RE = re.compile(r"[a-zA-Z][a-zA-Z\d-]*")
+
+    _PAIR = r"\\([\\ #=\"\+,;<>]|[\da-zA-Z]{2})"
+    _PAIR_RE = re.compile(_PAIR)
+    _LUTF1 = r"[\x01-\x1f\x21\x24-\x2A\x2D-\x3A\x3D\x3F-\x5B\x5D-\x7F]"
+    _SUTF1 = r"[\x01-\x21\x23-\x2A\x2D-\x3A\x3D\x3F-\x5B\x5D-\x7F]"
+    _TUTF1 = r"[\x01-\x1F\x21\x23-\x2A\x2D-\x3A\x3D\x3F-\x5B\x5D-\x7F]"
+    _UTFMB = rf"[\x80-{chr(sys.maxunicode)}]"
+    _LEADCHAR = rf"{_LUTF1}|{_UTFMB}"
+    _STRINGCHAR = rf"{_SUTF1}|{_UTFMB}"
+    _TRAILCHAR = rf"{_TUTF1}|{_UTFMB}"
+    _STRING_RE = re.compile(
+        rf"""
+        (
+            ({_LEADCHAR}|{_PAIR})
+            (
+                ({_STRINGCHAR}|{_PAIR})*
+                ({_TRAILCHAR}|{_PAIR})
+            )?
+        )?
+        """,
+        re.VERBOSE,
+    )
+    _HEXSTRING_RE = re.compile(r"#([\da-zA-Z]{2})+")
+
+    def __init__(self, data: str, attr_name_overrides: _NameOidMap) -> None:
+        self._data = data
+        self._idx = 0
+
+        self._attr_name_overrides = attr_name_overrides
+
+    def _has_data(self) -> bool:
+        return self._idx < len(self._data)
+
+    def _peek(self) -> typing.Optional[str]:
+        if self._has_data():
+            return self._data[self._idx]
+        return None
+
+    def _read_char(self, ch: str) -> None:
+        if self._peek() != ch:
+            raise ValueError
+        self._idx += 1
+
+    def _read_re(self, pat) -> str:
+        match = pat.match(self._data, pos=self._idx)
+        if match is None:
+            raise ValueError
+        val = match.group()
+        self._idx += len(val)
+        return val
+
+    def parse(self) -> Name:
+        """
+        Parses the `data` string and converts it to a Name.
+
+        According to RFC4514 section 2.1 the RDNSequence must be
+        reversed when converting to string representation. So, when
+        we parse it, we need to reverse again to get the RDNs on the
+        correct order.
+        """
+        rdns = [self._parse_rdn()]
+
+        while self._has_data():
+            self._read_char(",")
+            rdns.append(self._parse_rdn())
+
+        return Name(reversed(rdns))
+
+    def _parse_rdn(self) -> RelativeDistinguishedName:
+        nas = [self._parse_na()]
+        while self._peek() == "+":
+            self._read_char("+")
+            nas.append(self._parse_na())
+
+        return RelativeDistinguishedName(nas)
+
+    def _parse_na(self) -> NameAttribute:
+        try:
+            oid_value = self._read_re(self._OID_RE)
+        except ValueError:
+            name = self._read_re(self._DESCR_RE)
+            oid = self._attr_name_overrides.get(
+                name, _NAME_TO_NAMEOID.get(name)
+            )
+            if oid is None:
+                raise ValueError
+        else:
+            oid = ObjectIdentifier(oid_value)
+
+        self._read_char("=")
+        if self._peek() == "#":
+            value = self._read_re(self._HEXSTRING_RE)
+            value = binascii.unhexlify(value[1:]).decode()
+        else:
+            raw_value = self._read_re(self._STRING_RE)
+            value = _unescape_dn_value(raw_value)
+
+        return NameAttribute(oid, value)

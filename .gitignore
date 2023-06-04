@@ -2,3 +2,4 @@
 ServiceKey_GoogleCloud.json
 /projects/imdb_data_engineering/airflow/data
 /projects/imdb_data_engineering/airflow/dags/most_popular_movies.csv
+article.txt
