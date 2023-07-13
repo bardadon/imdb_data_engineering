@@ -185,7 +185,7 @@ def _load_to_bigQuery(movie_names, chart, dataset_name='imdb'):
     '''
     Load data into BigQuery table.
     Args:
-        - movie_names(list) = List of movie names
+        - movie_names(pd.DataFrame) = dataframe of movie names
         - chart(str) = Name of the chart
             Options: most_popular_movies, top_250_movies, top_english_movies, top_250_tv
         - dataset_name(str) = Name of the new/existing data set.
